@@ -30,6 +30,7 @@
     "hexo-renderer-kramed": "^0.1.4",
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
+    "hexo-service-worker": "^1.0.1",
     "hexo-spoiler": "^1.7.3",
     "hexo-tag-dplayer": "^0.3.3",
     "imagemin": "^7.0.1",

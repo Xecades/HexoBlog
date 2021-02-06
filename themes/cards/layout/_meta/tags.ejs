@@ -1,0 +1,1 @@
+<div class="post-entry__tags"><% (post.tags || []).forEach(function(item) { %><a href="<%= url_for(item.path) %>" class="post-tags__link button">♯ <%= item.name %></a><% }); %></div>

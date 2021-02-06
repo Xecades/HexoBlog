@@ -1,0 +1,92 @@
+---
+title: NOTICE
+date: 2021-02-03 09:52:42
+---
+
+如你所见，本博客最近进行了大幅度更改.
+
+<!-- more -->
+
+---
+
+## 更换博客主题
+
+由 NexT 切换至 Cards.
+
+NexT 主题略显臃肿（我还是很喜欢这个主题的），优点是功能十分齐全，但我的魔改版加载需要十多秒钟，便忍痛割爱了.
+
+Cards 主题轻便，访问迅速（目前还没完成速度优化），但是功能明显不足，博客很多组件都是我从 NexT 移植或自主编写的.
+
+NexT 主题存有备份，如遇特殊情况，可以恢复.
+
+⚐ 参见[「Theme Cards 文档」](https://theme-cards.ichr.me/)和[「博客组件测试页」](https://blog.xecades.xyz/articles/test/).
+
+---
+
+## 更换评论系统模板
+
+之前的 valine 评论系统很好看，但是不支持回复缩进，导致整个页面显得臃肿.
+
+现在切换至默认的 valine 模板，并在此基础上加以修改，添加了评论框背景（当前使用 webp 格式，safari 可能无法正常显示）.
+
+由于评论系统更换，之前的评论因为各种原因无法全部恢复，但我还保留着它们的备份，我会尽可能恢复的.
+
+⚐ 参见[「valine 官网」](https://valine.js.org/).
+
+---
+
+## 加速图片访问
+
+本站全部 jpg、png 图片都有其对应 webp 格式的图片.
+
+webp 是一种 ~~新兴的~~ 图片格式，和等效 jpg、png 相比，它能大幅度减少图片大小，大大提高加载速度.
+
+除 safari 和 ie 外，其余主流浏览器均支持 webp（safari 最新版已支持）.
+
+考虑到 safari 用户的体验，本博客使用 base64 文件头判断是否支持 webp，若支持，便显示 webp 图片，否则显示默认格式图片.
+
+为了防止支持 webp 的浏览器意外加载默认格式的图片，我在本地将博客正文所有 \*.png、\*.jpg 内容替换为 \*.picSuffix（显然这样会引发加载错误），网页加载时再用 javascript 代码将 \*.picSuffix 替换为 \*.webp 或默认格式.
+
+这样最大的缺点是，如果禁止网页执行脚本，本站正文图片将无法加载. 实际上，如果禁止执行脚本，本站的全部 MathJax 数学公式也无法加载，因此对访问者影响不大.
+
+⚐ 参见[「谷歌 Webp 文档」](https://developers.google.cn/speed/webp/).
+
+---
+
+## JsDelivr CDN 加速
+
+目前尚未完成.
+
+本站评论系统的表情使用的就是 JsDelivr CDN 加速.
+
+⚐ 参见[「JsDelivr 官网」](http://jsdelivr.com/)
+
+---
+
+## 添加文章图
+
+我会在合适的文章添加合适的图片.
+
+⚐ 参见文章[「2020 这一年」](https://blog.xecades.xyz/articles/2020-2021/)和[「康威生命游戏 | 元胞自动机」](https://blog.xecades.xyz/articles/LifeGame/).
+
+---
+
+## 更换 favicon
+
+更换到一个更加简洁美观的 favicon（我说这是我画的你信不信？）.
+
+黑白模式：
+
+![](/assets/notice-pic1.png)
+
+白天模式：
+
+![](/assets/notice-pic2.png)
+
+夜晚模式：
+
+![](/assets/notice-pic3.png)
+
+**Copyright ©2021 Xecades**
+
+目前只在 favicon 应用了黑白模式.

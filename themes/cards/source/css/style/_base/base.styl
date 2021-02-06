@@ -1,0 +1,125 @@
+:root
+    --main-color $color_main
+    --bg-color $color_background
+    --bg-content-color $color_card
+    --bg-menu #eceef2
+    --bg-tag-color $color_tags_block
+    --bg-cat-color $color_categories_block
+    --bg-code $color_codeblock
+    --bg-codeblock #f8f8f8
+    --body-color $color_font
+    --title-color $color_title
+    --border-color rgba(0,0,0,0.1)
+    --space $space_main
+    --space-float $space_float
+    --content-width $max_width_main
+
+// Xecades 2021 / 1 / 23
+
+.kbd-display
+    border 1px solid gray
+    font-size 1em
+    box-shadow 1px 0 1px 0 #eee, 0 2px 0 2px #ccc, 0 2px 0 3px #444
+    border-radius 3px
+    margin 2px 3px
+    padding 1px 5px
+
+::-webkit-scrollbar
+    width 0 !important
+    height 0 !important
+
+// ::-webkit-scrollbar
+// 	width 9px !important
+// 	height 9px !important
+
+// @media screen and (max-width: 762px)
+//     ::-webkit-scrollbar
+//         width 18px !important
+//         height 18px !important
+
+// ::-webkit-scrollbar-corner
+// 	background #ffffff4d
+// 	border-width 1px
+// 	border-style solid
+// 	border-color transparent
+// 	border-image initial
+
+// ::-webkit-scrollbar-thumb
+// 	z-index 2147483647
+// 	background-clip content-box
+// 	width 1px !important
+// 	background-color #00000066 !important
+// 	border-radius 12px
+// 	margin 1px !important
+// 	border-width 2px !important
+// 	border-style solid !important
+// 	border-color transparent !important
+// 	border-image initial !important
+
+// ::-webkit-scrollbar-track-piece
+// 	width 6px !important
+// 	height 5px !important
+// 	margin 1px
+// 	padding 0px
+// 	background #ffffff4d
+
+::selection
+    background-color: rgba(0, 0, 0, .1)
+
+body
+    font-family $global_font
+    -webkit-tap-highlight-color transparent
+
+mjx-mtext *
+    font-family $global_font !important
+
+// mjx-container
+//     transition transform .3s
+//     &:hover
+//         transform scale(1.1)
+
+.highlight
+    background-color rgba(0, 0, 0, .02) !important
+    *
+        font-family $code_font !important
+
+// Xecades end
+
+body
+    --base-font-size $fontsize
+    font-size var(--base-font-size)
+    font-weight 400
+    background-color var(--bg-color)
+    color var(--body-color)
+    transition color .6s,background-color .6s
+    margin 0
+    padding 0
+    line-height $lineheight
+
+body,
+html
+    width 100%
+    height 100%
+
+@media screen and (max-width:650px)
+    body
+        --space $space_sm
+
+article
+aside
+figure
+details
+footer
+header
+nav
+section
+    display block
+
+.main
+    margin 0 auto
+    padding 1.5vw 12px 0
+
+    &.tagscloud
+    &.links 
+        margin 0 auto
+        max-width 1024px

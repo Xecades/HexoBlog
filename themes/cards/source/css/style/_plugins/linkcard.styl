@@ -1,0 +1,93 @@
+/* Linkcard */
+
+.LinkCard,
+.LinkCardhover
+    text-decoration none
+    border none !important
+    color inherit !important
+    &:hover
+        text-decoration none !important
+
+.LinkCard
+    position relative
+    display block
+    margin 1em auto
+    width 390px
+    box-sizing border-box
+    border-radius 12px
+    max-width 100%
+    overflow hidden
+    color inherit
+    text-decoration none
+
+.ztext
+    word-break break-word
+    line-height 1.6
+
+.LinkCard-backdrop
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    background-repeat no-repeat
+    -webkit-filter blur(20px)
+    filter blur(20px)
+    background-size cover
+    background-position center
+    background-image url(/assets/zhihu-card-default.svg)
+
+.LinkCard,
+.LinkCardhover
+    text-decoration none
+    border none !important
+    color inherit !important
+
+.LinkCard-content
+    position relative
+    display flex
+    align-items center
+    justify-content space-between
+    padding 12px
+    border-radius inherit
+    background-color rgba(246, 246, 246, 0.88)
+
+.LinkCard-text
+    overflow hidden
+
+.LinkCard-title
+    display -webkit-box
+    -webkit-line-clamp 2
+    overflow hidden
+    text-overflow ellipsis
+    max-height calc(16px * 1.25 * 2)
+    font-size 16px
+    font-weight 500
+    line-height 1.25
+    color #1a1a1a
+
+.LinkCard-meta
+    display flex
+    margin-top 4px
+    font-size 14px
+    line-height 20px
+    color #999
+    white-space nowrap
+
+.LinkCard-link
+    display inline-block
+    align-items center
+    line-height 20px
+    width 20px
+    height 20px
+
+.LinkCard-imageCell
+    margin-left 8px
+    border-radius 6px
+
+.LinkCard-image
+    display block
+    width 60px
+    height 60px
+    border-radius inherit
+    background-size contain

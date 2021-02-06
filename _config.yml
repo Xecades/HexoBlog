@@ -4,16 +4,16 @@
 
 # Site
 title: Xecades
-subtitle: 'Xecades&acute;s Blog'
-description: 'Xecades 的技术博客'
-keywords: 'Xecades,博客,blog,数学,物理,计算机,javascript,技术博客,开发,编程,信息学'
+subtitle: "Xecades&acute;s Blog"
+description: "Xecades 的技术博客"
+keywords: "Xecades,博客,blog,数学,物理,计算机,javascript,技术博客,开发,编程,信息学"
 author: Xecades
 language:
- - zh-CN
- - en
- - zh-HK
- - zh-TW
-timezone: 'Asia/Shanghai'
+  - zh-CN
+  - en
+  - zh-HK
+  - zh-TW
+timezone: "Asia/Shanghai"
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
@@ -42,7 +42,7 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude: ""
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -52,21 +52,21 @@ highlight:
   enable: true
   line_number: true
   auto_detect: true
-  tab_replace: ''
+  tab_replace: ""
   wrap: true
   hljs: false
 prismjs:
   enable: false
   preprocess: true
   line_number: true
-  tab_replace: ''
+  tab_replace: ""
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
 
@@ -86,7 +86,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: "mtime"
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -107,10 +107,10 @@ theme: cards
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-- type: git
-  repo: git@e.coding.net:xecades-01/blog.git
-  branch: master
-- type: baidu_url_submitter
+  - type: git
+    repo: git@e.coding.net:xecades-01/blog.git
+    branch: master
+  - type: baidu_url_submitter
 
 feed:
   type: atom
@@ -119,7 +119,7 @@ feed:
   hub:
   content:
   content_limit: 140
-  content_limit_delim: ' '
+  content_limit_delim: " "
   order_by: -date
   icon: https://s2.ax1x.com/2019/08/10/eOLcH1.png
 
@@ -133,7 +133,7 @@ baidu_url_submit:
   host: blog.xecades.xyz
   token: R59zZ5HZ4RWYZZX1
   path: baidu_urls.txt
-  
+
 neat_enable: true
 neat_html:
   enable: true
@@ -146,14 +146,66 @@ neat_html:
 neat_css:
   enable: true
   exclude:
-    - '*.min.css'
+    - "*.min.css"
 neat_js:
   enable: true
   mangle: true
   output:
   compress:
   exclude:
-    - '*.min.js'
+    - "*.min.js"
 
 use_webp: true
 use_smiles: true
+
+pwa:
+  manifest:
+    path: /manifest.json
+    body:
+      name: Xecades
+      short_name: Xec
+      scope: /
+      icons:
+        - src: /images/android-chrome-512x512.png
+          sizes: 512x512
+          type: image/png
+        - src: /images/android-chrome-192x192.png
+          sizes: 192x192
+          type: image/png
+        - src: /images/android-chrome-180x180.png
+          sizes: 180x180
+          type: image/png
+        - src: /images/mstile-144x144.png
+          sizes: 144x144
+          type: image/png
+        - src: /images/mstile-128x128.png
+          sizes: 128x128
+          type: image/png
+        - src: /images/mstile-96x96.png
+          sizes: 96x96
+          type: image/png
+        - src: /images/mstile-48x48.png
+          sizes: 48x48
+          type: image/png
+      start_url: /
+      theme_color: "#ffffff"
+      background_color: "#ffffff"
+      display: standalone
+  serviceWorker:
+    path: /sw.js
+    preload:
+      urls:
+        - /
+      posts: 12
+    opts:
+      networkTimeoutSeconds: 30
+    routes:
+      - pattern: !!js/regexp /hm.baidu.com/
+        strategy: networkOnly
+      - pattern: !!js/regexp /www.google-analytics.com/
+        strategy: networkOnly
+      - pattern: !!js/regexp /.*\.(js|css|jpg|jpeg|png|gif)$/
+        strategy: cacheFirst
+      - pattern: !!js/regexp /\//
+        strategy: networkFirst
+  priority: 10

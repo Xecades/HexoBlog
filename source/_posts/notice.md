@@ -5,7 +5,51 @@ date: 2021-02-03 09:52:42
 
 如你所见，本博客最近进行了大幅度更改.
 
+UPD `2021 / 2 / 6`: PWA、ServiceWorker、InstantClick 支持以及一些小玩意.
+
 <!-- more -->
+
+---
+
+目前正在考虑是否将博客部署到 Vercel，放弃 Coding.
+
+打算国内用 Vercel + CDN，国外 Netlify + CDN.
+
+---
+
+## PWA 应用支持
+
+支持将网站下载成应用，方便访问.
+
+---
+
+## Service Worker 支持
+
+支持离线访问，加速页面跳转.
+
+---
+
+## Instant Click 支持
+
+极大加速页面跳转，优化用户体验.
+
+---
+
+## 简化主页
+
+使用 vue-router 写了一个无刷新跳转的主页.
+
+地址：xecades.xyz
+
+废弃：lab.xecades.xyz、me.xecades.xyz、friend.xecades.xyz
+
+TODO:
+
+- [ ] 主页使用 React + Gastby 搭建，部署在 Netlify + Vercel.
+- [ ] 更换英文字体.
+- [ ] 主页支持 PWA + SW.
+- [ ] lab.xecades.xyz 等页重定向至 xecades.xyz/lab.
+
 
 ---
 

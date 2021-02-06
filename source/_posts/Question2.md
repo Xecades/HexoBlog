@@ -50,9 +50,7 @@ $$\boxed{|z-1|=2\sin\frac{\theta}{2}}$$
 > 若用 $\varepsilon^0,\varepsilon^1\cdots,\varepsilon^{n-1}$ 表示复数域上的方程 $x^n-1=0$ 的 $n$ 个根，则有：
 > $$\boxed{\sum_{k=0}^{n-1}x^k=\prod_{k=1}^{n-1}(x-\varepsilon^k)}$$
 
-此处使用 $\varepsilon^k$ 来表示 $x^n-1=0$ 的根的方法，属于单位负数根模型，后面也会用到这个模型的一些性质，如果对单位负数根模型不了解，可以查看这个简短的介绍：
-
-{% linkcard "https://blog.xecades.xyz/articles/AcademicSubject/" "复数笔记" %}
+此处使用 $\varepsilon^k$ 来表示 $x^n-1=0$ 的根的方法，属于**单位复数根模型**。
 
 这个引理的证明过程是显然的，因为：
 

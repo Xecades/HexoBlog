@@ -7,6 +7,8 @@ var noop = _utils.noop;
  * Inline-Level Grammar
  */
 
+// Edited by Xecades
+
 var inline = {
     escape: /^\\([`*\[\]()#$+\-.!_>])/,
     // escape: /^\\([\\`*{}\[\]()#$+\-.!_>])/,

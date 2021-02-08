@@ -156,7 +156,6 @@ neat_js:
         - "*.min.js"
 
 use_webp: true
-use_smiles: true
 
 service_worker:
     maximumFileSizeToCacheInBytes: 5242880

@@ -1,5 +1,5 @@
 <!--icon-->
-<% if (theme.head.favicon) { %>
+<!-- <% if (theme.head.favicon) { %>
     <% if (theme.head.favicon.ico) { %>
         <link rel="shortcut icon" href="<%= url_for(theme.head.favicon.ico) %>">
     <% } %>
@@ -17,4 +17,15 @@
     <% } %>
 <% } else if (config.favicon) { %>
     <link rel="shortcut icon" type='image/x-icon' href="<%= url_for(config.favicon) %>">
-<% } %>
+<% } %> -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="apple-mobile-web-app-title" content="Xecades">
+<meta name="application-name" content="Xecades">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">

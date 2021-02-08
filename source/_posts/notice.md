@@ -11,9 +11,23 @@ UPD `2021 / 2 / 6`: PWA、ServiceWorker、InstantClick 支持以及一些小玩�
 
 ---
 
-目前正在考虑是否将博客部署到 Vercel，放弃 Coding.
+~~目前正在考虑是否将博客部署到 Vercel，放弃 Coding.~~
 
-打算国内用 Vercel + CDN，国外 Netlify + CDN.
+~~打算国内用 Vercel + CDN，国外 Netlify + CDN.~~
+
+博客已部署至 Vercel 平台，安装指令是：
+
+```
+npm install && cp kramed-inline.js node_modules/kramed/lib/rules/inline.js
+```
+
+（手动改 `node_modules` 真香）
+
+编译指令是：
+
+```
+hexo generate
+```
 
 ---
 
@@ -45,10 +59,9 @@ UPD `2021 / 2 / 6`: PWA、ServiceWorker、InstantClick 支持以及一些小玩�
 
 TODO:
 
-- [ ] 主页使用 React + Gastby 搭建，部署在 Netlify + Vercel.
-- [ ] 更换英文字体.
-- [ ] 主页支持 PWA + SW.
-- [ ] lab.xecades.xyz 等页重定向至 xecades.xyz/lab.
+1. ~~主页使用 React + Gastby 搭建，部署在 Netlify + Vercel.~~ （主页仍使用 vue，gatsby 相对较臃肿.）
+2. 更换英文字体.
+3. lab.xecades.xyz 等页重定向至 xecades.xyz/lab.
 
 
 ---
@@ -134,3 +147,13 @@ webp 是一种 ~~新兴的~~ 图片格式，和等效 jpg、png 相比，它能�
 **Copyright ©2021 Xecades**
 
 目前只在 favicon 应用了黑白模式.
+
+---
+
+## By the way
+
+欢迎来我的 Github 参观.
+
+{% linkcard "https://github.com/Xecades" "Xecades" %}
+
+目前大部分内容在 Coding 上，private 模式，之后会陆续搬过来.

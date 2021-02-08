@@ -460,7 +460,6 @@ vendors:
   # Valine comments system
   # https://github.com/xcss/Valine/
   # Version: 1.4.14
-  # valine: //cdn.xecades.xyz/lib/valine.min.js
   # valine: //cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js
   # valine: //cdn.bootcdn.net/ajax/libs/valine/1.4.9/Valine.min.js
   valine: /js/valine.js

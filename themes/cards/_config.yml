@@ -207,8 +207,8 @@ comments:
 
   # Valine
   valine: 
-    appId: l7hW3mODnFXRp2c3ybRRuyKb-gzGzoHsz
-    appKey: INJBbN7seePP8xUMkHLSIHDD
+    appId: F0e62QYVfL5Jlg2AeNitftEN-MdYXbMMI
+    appKey: WCBckc8K5af1ycEwpNedezA1
     placeholder: I'm waiting for you :-)
     avatar: mp
     meta: [nick, mail, link]
@@ -217,7 +217,7 @@ comments:
     highlight: true
     avatarForce:
     recordIP:
-    serverURLs: https://avoscloud.com
+    serverURLs: https://F0e62QYV.api.lncldglobal.com
     enableQQ:
     requiredFields: [nick, mail]
     emojiCDN: //cdn.jsdelivr.net/gh/Xecades/emotion@latest/aru/

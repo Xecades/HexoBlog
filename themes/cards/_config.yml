@@ -190,7 +190,7 @@ meta:
 # ---------------------------------------------------------------
 
 comments: 
-  use: valine  # disqus | disqusjs | valine | minivaline | gitalk | gitment | levere | changyan | wildfire
+  use: twikoo  # disqus | disqusjs | valine | minivaline | gitalk | gitment | levere | changyan | wildfire
 
   # Disqus
   disqus:  
@@ -204,6 +204,10 @@ comments:
     apikey: 
     admin: ''
     nesting: 2
+
+  # Twikoo
+  twikoo:
+    envId: twikoo-6g2gggdc255ceec5
 
   # Valine
   valine: 
@@ -405,6 +409,8 @@ darkmode: false
 # Vendors
 # 某一项留空则调用 默认/本地 文件
 vendors:
+  twikoo: https://cdn.jsdelivr.net/npm/twikoo@1/dist/twikoo.all.min.js
+
   mediumzoom:
 
   # main style css

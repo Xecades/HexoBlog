@@ -79,25 +79,22 @@ NexT 主题自带的样式远多于 Cards 主题，所以我将 NexT 主题中�
 
 ---
 
-## [Blog] 修改 Valine 评论系统
+## [Blog] 使用 twikoo 评论系统
 
-采用我魔改的 Valine Admin 评论管理系统.
+之前采用的 leancloud 没过几天就提醒超限使用了，贫苦学生没有钱……
 
-使用 Leancloud 作后端，支持邮件提醒等操作.
+所以换成 twikoo 了，感觉它比 valine 好用点.
 
-添加了输入框背景图，该图目前只提供了 webp 格式，故部分 Safari 浏览器无法加载.
+输入框背景图目前只提供了 webp 格式，故部分 Safari 浏览器无法加载.
 
 如图：
 
-![](/assets/valine.webp)
+![](/assets/comment.webp)
 
 **⚐ 参见**：
 
- - [「本博客评论管理页面」](https://cmt.xecades.xyz/)
- - [「魔改版 Valine Admin Github 仓库」](https://github.com/Xecades/Valine-Admin)
- - [「原版 Valine Admin Github 仓库」](https://github.com/DesertsP/Valine-Admin)
+ - [「Twikoo 官网」](https://twikoo.js.org/)
  - [「Valine 官网」](https://valine.js.org/)
- - [「Leancloud 官网」](https://leancloud.cn/)
 
 ---
 

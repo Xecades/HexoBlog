@@ -1,0 +1,20 @@
+<% if (theme.comments.use === 'twikoo') { %>
+<script>
+    function loadComment() {
+        let e = document.createElement("script");
+        e.src = '<%= url_for(theme.vendors.twikoo || '//cdn.jsdelivr.net/npm/twikoo@1.2.0/dist/twikoo.all.min.js') %>',
+        document.body.appendChild(e);
+
+        e.onload = () => {
+            twikoo.init({
+                envId: '<%- theme.comments.twikoo.envId %>',
+                el: '#tcomment',
+            })
+        };
+    }
+
+    (() => {
+        loadComment();
+    })();
+</script>
+<% } %>

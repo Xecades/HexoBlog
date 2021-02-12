@@ -1,5 +1,5 @@
 ---
-title: 用hexo和GitHub搭建个人博客
+title: 用 Hexo 和 GitHub 搭建个人博客
 date: 2019-02-22 09:19:33
 tags:
  - 教程

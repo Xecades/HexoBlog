@@ -8,7 +8,8 @@ tags:
  - 算法
 categories:
  - 算法
-author: Siyuan Lau
+author: "Siyuan Lau"
+origin: "https://siyuanlau.github.io/"
 ---
 
 <!-- placeholder -->
@@ -100,8 +101,8 @@ steghide extract -sf 你要解开的文档
 
 ---
 
-转载自:
+转载自:（目前该网址无法访问，不清楚什么原因）
 
-{% linkcard "https://siyuanlau.github.io/2017/01/26/图像隐写软件steghide入门/index.html" "Siyuan Lau 的文章" %}
+{% linkcard "https://siyuanlau.github.io/2017/01/26/图像隐写软件steghide入门/" "Siyuan Lau 的文章" %}
 
-经原作者 [Siyuan Lau](https://siyuanlau.github.io/) 授权，略有修改
+经原作者 [Siyuan Lau](https://siyuanlau.github.io/) 授权，略有修改.

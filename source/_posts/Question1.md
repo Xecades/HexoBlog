@@ -6,7 +6,6 @@ tags:
  - 题目
 categories:
  - 题目
-mathjax: true
 ---
 
 <!-- placeholder -->

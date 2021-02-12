@@ -7,7 +7,8 @@ categories:
   - 算法
 date: 2019-08-09 16:20:04
 mathjax: true
-author: SYCstudio
+author: "SYCstudio"
+origin: "https://www.cnblogs.com/SYCstudio/p/7194315.html"
 ---
 
 >前段时间学习KMP算法，感觉有些复杂，不过好歹是弄懂啦，简单地记录一下，方便以后自己回忆. 

@@ -8,6 +8,7 @@ categories:
  - 算法
 mathjax: true
 author: "可爱即是正义"
+origin: "https://www.luogu.com.cn/blog/shehuizhuyihao/post-zhen-sheng-fa"
 ---
 
 一个$m×n$的矩阵就是$m×n$个数排成$m$行$n$列的一个数阵. 矩阵可以用于批量解决一些线性问题，例如递推方程. 

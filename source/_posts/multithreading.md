@@ -1,5 +1,5 @@
 ---
-title: "[Hash 的笔记] Python 的多线程"
+title: "[Hash 笔记] Python 的多线程"
 date: 2021-02-12 13:00:00
 tags:
  - Python
@@ -9,9 +9,11 @@ categories:
 author: "Hash"
 ---
 
-笔记，介绍 Python 中的**多线程**.
-
-> 本文由 [@Hash](https://one.wh0th.ink/) 撰写，若有疑问，可在评论区讨论.
+作者的笔记，介绍 Python 中的**多进程**.
+ 
+ > 本文由 [@Hash](https://one.wh0th.ink/) 撰写，由 @Xecades 代为发布，并稍作更改.
+ > 
+ > 若有疑问，可在评论区讨论，@Hash 将会回复.
 
 <!-- more -->
 
@@ -23,7 +25,7 @@ import time, threading
 # 新线程执行的代码
 def loop() -> None:
     print(f"thread {threading.current_thread().name} is running...")
-    n: int = 0
+    n = 0
     while n < 5:
         n += 1
         print(f"thread {threading.current_thread().name} >>> {n}")
@@ -58,6 +60,7 @@ if __name__ == "__main__":
 也许这就是进程锁比线程锁重要的原因.
 
 ```py
+# 无锁
 import threading
 
 # 假定这是你的银行存款：
@@ -70,7 +73,7 @@ def change_it(n: int):
     balance -= n
 
 def run_thread(n: int):
-    for i in range(2000000):
+    for _ in range(2000000):
         change_it(n)
 
 t1 = threading.Thread(target = run_thread, args = (5,))
@@ -96,7 +99,7 @@ print(balance)
 
 最后，根据 Python 文档，
 
-这个模块提供的带有 `acquire()` 和 `release()` 方法的对象，可以被用作 `with` 语句的上下文管理器. 当进入语句块时 `acquire()` 方法会被调用，退出语句块时 `release()` 会被调用. 因此，以下片段:
+> 这个模块提供的带有 `acquire()` 和 `release()` 方法的对象，可以被用作 `with` 语句的上下文管理器. 当进入语句块时 `acquire()` 方法会被调用，退出语句块时 `release()` 会被调用. 因此，以下片段:
 
 ```py
 with some_lock:
@@ -111,6 +114,41 @@ try:
     # statements
 finally:
     some_lock.release()
+```
+
+正确计算 `balance` 的加锁代码如下：
+
+```py
+import threading
+# 假定这是你的银行存款：
+balance = 0
+lock = threading.Lock()
+def change_it(n: int):
+    # 先存后取，结果应该为 0：
+    global balance
+    balance += n # 即使改成 inplace add 也没用
+    balance -= n
+def run_thread(n: int):
+    for _ in range(2000000):
+        with lock:
+            change_it(n)
+
+'''
+def run_thread(n: int):
+    with lock:
+        for _ in range(2000000):
+            change_it(n)
+根据廖雪峰的评论，这两者结果都是 0，但语义上有区别.
+> 你的代码是在循环 100000 次结束前别人都拿不到锁，如果循环 100000 次要 10 秒，那其他拿锁线程就必须等 10 秒.
+'''
+
+t1 = threading.Thread(target = run_thread, args = (5,))
+t2 = threading.Thread(target = run_thread, args = (8,))
+t1.start()
+t2.start()
+t1.join()
+t2.join()
+print(balance)
 ```
 
 <!-- placeholder -->

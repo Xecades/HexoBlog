@@ -1,5 +1,5 @@
 ---
-title: "[Hash 的笔记] Python 的多进程"
+title: "[Hash 笔记] Python 的多进程"
 date: 2021-02-12 13:10:00
 tags:
  - Python
@@ -9,9 +9,11 @@ categories:
 author: "Hash"
 ---
 
-笔记，介绍 Python 中的**多进程**.
-
-> 本文由 [@Hash](https://one.wh0th.ink/) 撰写，若有疑问，可在评论区讨论.
+作者的笔记，介绍 Python 中的**多进程**.
+ 
+ > 本文由 [@Hash](https://one.wh0th.ink/) 撰写，由 @Xecades 代为发布，并稍作更改.
+ > 
+ > 若有疑问，可在评论区讨论，@Hash 将会回复.
 
 <!-- more -->
 
@@ -52,7 +54,7 @@ echo "END"
  - `os.fork()`
  - `os.getpid()`
  - `os.getppid()`
- - `os._exit()`
+ - `os._exit()`（退出子进程）
  - `os.wait()`，`os.waitid()`（用于进程同步）
 
 别的知识点包括进程状态，孤儿 / 僵尸进程，资源独立.
@@ -162,15 +164,16 @@ if __name__ == '__main__':
 
 ### 进程锁
 
+关于线程锁和进程锁，推荐这篇文章：
+
+{% linkcard "https://blog.csdn.net/S_o_l_o_n/article/details/92148720" "python线程锁和进程锁_S_o_l_o_n的博客-CSDN博客" %}
+
 ```py
 from multiprocessing import Process, Lock
 
-def f(l, i):
-    l.acquire()
-    try:
-        print('hello world', i)
-    finally:
-        l.release()
+def f(l, i: int) -> None:
+    with l:
+        print('hello world'*8192, i)
 
 if __name__ == '__main__':
     lock = Lock()
@@ -179,9 +182,9 @@ if __name__ == '__main__':
         Process(target = f, args = (lock, num)).start()
 ```
 
-听说和线程锁差不多……就先跳了？
-
-根据那边的知识，多进程的锁不用于限制变量访问，而是同步 IO.
+此处多进程的锁不用于限制变量访问，而是同步 IO.
+ 
+如果把锁去掉，输出会有奇效 w
 
 ---
 

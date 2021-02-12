@@ -207,6 +207,6 @@ $a$ >> $b$把二进制下的$a$向右移$b$位，低位舍去，高位补0.
 
 ---
 
-{% linkcard "/articles/BitwiseOperationUsage" "位运算的应用" %}
+{% linkcard "https://blog.xecades.xyz/articles/BitwiseOperationUsage" "位运算的应用" %}
 
 完~

@@ -11,7 +11,7 @@ mathjax: true
 
 <!-- placeholder -->
 
-{% linkcard "/articles/BitwiseOperation" "位运算的操作" %}
+{% linkcard "https://blog.xecades.xyz/articles/BitwiseOperation" "位运算的操作" %}
 
 本文介绍位运算的简单应用及性质
 <!-- more -->

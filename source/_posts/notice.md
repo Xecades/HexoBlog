@@ -29,6 +29,8 @@ npm install && cp kramed-inline.js node_modules/kramed/lib/rules/inline.js
 hexo generate
 ```
 
+<!-- placeholder -->
+
 ---
 
 ## PWA 应用支持

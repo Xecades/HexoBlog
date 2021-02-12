@@ -113,6 +113,8 @@ finally:
     some_lock.release()
 ```
 
+<!-- placeholder -->
+
 ---
 
 ## GIL（Global Interpreter Lock）

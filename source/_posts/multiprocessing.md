@@ -132,6 +132,8 @@ if __name__ == '__main__':
     p.join()
 ```
 
+<!-- placeholder -->
+
 ---
 
 #### `multiprocessing.Pipe`

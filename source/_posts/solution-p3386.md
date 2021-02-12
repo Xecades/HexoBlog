@@ -72,6 +72,8 @@ for i=1 to n//枚举每个板凳
 return false//a没板凳坐了（泪目）
 ```
 
+<!-- placeholder -->
+
 ---
 ### 时间复杂度优化
 

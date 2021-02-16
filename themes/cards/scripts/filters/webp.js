@@ -8,7 +8,7 @@ function replacePic(content) {
 
 function imgProcess(content) {
     return content.replace(/<img(.*?)src="(.*?)"(.*?)>/gi, (str, before, src, after) => {
-        return `<img${before}fakesrc="${src}"${after}>`;
+        return `<img${before}data-src="${src}" class="lazyload"${after}>`;
     });
 }
 

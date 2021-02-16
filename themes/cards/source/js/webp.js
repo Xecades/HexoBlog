@@ -8,6 +8,13 @@ async function supportsWebp() {
 	return createImageBitmap(blob).then(() => true, () => false);
 }
 
+function loadScript(url) {
+	var script = document.createElement("script");
+	script.async = true;
+	script.src = url;
+	document.body.append(script);
+}
+
 (async () => {
 	webpSuffix = (await supportsWebp()) ? ".webp" : "";
 
@@ -16,9 +23,10 @@ async function supportsWebp() {
 	});
 
 	document.querySelectorAll("img").forEach((item) => {
-		item.outerHTML = item.outerHTML.replace(".picSuffix", webpSuffix).replace("fakesrc", "src");
+		item.outerHTML = item.outerHTML.replace(".picSuffix", webpSuffix);
 	});
 
+	loadScript("https://cdn.bootcdn.net/ajax/libs/lazysizes/5.2.2/lazysizes.min.js");
 	mediumZoom('.post__content :not(a) > img, .post__content > img');
 
 	console.clear();

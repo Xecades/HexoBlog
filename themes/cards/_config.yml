@@ -60,6 +60,8 @@ navbar:
       url: /progress/
     - name: 归档
       url: /archives/
+    - name: 留言
+      url: /msg/
     - name: 开往
       url: https://travellings.now.sh/
     - name: RSS

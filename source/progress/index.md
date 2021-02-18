@@ -1,8 +1,8 @@
 ---
 title: 时光轴
-date: 2019-02-16 11:46:02
 layout: page
 copyright: false
+subtitle: "<div style=\"color:white\">Seeing the unseen.</div>"
 ---
 
 <!-- placeholder -->
@@ -91,8 +91,10 @@ $$\mathfrak{Nirvana}$$
 
 ---
 $$\huge\color{steelblue} {\mathit{2021} }$$
-$$\mathfrak{Hopefully...}$$
+$$\mathfrak{Optimist}$$
 
+<p>1: 大幅重构博客，「大道至简」</p>
 <p>2-1: DFT，IDFT 和 FFT！</p>
+<p>2: 博客全部迁移至 vercel，采用 CI 部署</p>
 
 $$\mathfrak{Till\space Now\dots}$$

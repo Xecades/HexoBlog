@@ -20,10 +20,8 @@ categories:
 ---
 
 {% note warning warning %}
-**注**：目前支持电脑访问
+**注**：目前仅支持电脑访问
 {% endnote %}
-
----
 
 ## 基础操作
 

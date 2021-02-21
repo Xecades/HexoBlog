@@ -7,6 +7,7 @@ tags:
 categories:
  - Python
 author: "Hash"
+thumbnail: /assets/multiprocessing-thumbnail.png
 ---
 
 作者的笔记，介绍 Python 中的**多进程**.

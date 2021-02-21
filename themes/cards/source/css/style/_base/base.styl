@@ -1,6 +1,7 @@
 :root
     --main-color $color_main
     --bg-color $color_background
+    --hd-color $color_header
     --bg-content-color $color_card
     --bg-menu #eceef2
     --bg-tag-color $color_tags_block
@@ -24,44 +25,54 @@
     margin 2px 3px
     padding 1px 5px
 
-::-webkit-scrollbar
-    width 0 !important
-    height 0 !important
-
 // ::-webkit-scrollbar
-// 	width 9px !important
-// 	height 9px !important
+//     width 0 !important
+//     height 0 !important
 
-// @media screen and (max-width: 762px)
-//     ::-webkit-scrollbar
-//         width 18px !important
-//         height 18px !important
+.medium-zoom-overlay
+    z-index 100
 
-// ::-webkit-scrollbar-corner
-// 	background #ffffff4d
-// 	border-width 1px
-// 	border-style solid
-// 	border-color transparent
-// 	border-image initial
+.medium-zoom-image--opened
+    z-index 101
 
-// ::-webkit-scrollbar-thumb
-// 	z-index 2147483647
-// 	background-clip content-box
-// 	width 1px !important
-// 	background-color #00000066 !important
-// 	border-radius 12px
-// 	margin 1px !important
-// 	border-width 2px !important
-// 	border-style solid !important
-// 	border-color transparent !important
-// 	border-image initial !important
+.header
+    background-color var(--hd-color)
+    backdrop-filter blur(32px)
 
-// ::-webkit-scrollbar-track-piece
-// 	width 6px !important
-// 	height 5px !important
-// 	margin 1px
-// 	padding 0px
-// 	background #ffffff4d
+::-webkit-scrollbar
+    width 9px !important
+    height 9px !important
+
+@media screen and (max-width: 762px)
+    ::-webkit-scrollbar
+        width 18px !important
+        height 18px !important
+
+::-webkit-scrollbar-corner
+    background #ffffff4d
+    border-width 1px
+    border-style solid
+    border-color transparent
+    border-image initial
+
+::-webkit-scrollbar-thumb
+    z-index 2147483647
+    background-clip content-box
+    width 1px !important
+    background-color #00000066 !important
+    border-radius 12px
+    margin 1px !important
+    border-width 2px !important
+    border-style solid !important
+    border-color transparent !important
+    border-image initial !important
+
+::-webkit-scrollbar-track-piece
+    width 6px !important
+    height 5px !important
+    margin 1px
+    padding 0px
+    background #ffffff4d
 
 ::selection
     background-color: rgba(0, 0, 0, .1)

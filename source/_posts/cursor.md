@@ -6,6 +6,7 @@ tags:
  - Javascript
 categories:
  - 计算机
+thumbnail: /assets/cursor-thumbnail.png
 ---
 
 看看效果：

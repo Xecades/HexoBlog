@@ -2,8 +2,6 @@
 layout: post
 title: 约数个数/和定理
 date: 2019-11-10 23:04:17
-tags:
- - 数学
 categories:
  - 数学
 mathjax: true

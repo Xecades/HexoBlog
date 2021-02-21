@@ -2,10 +2,10 @@
 title: 题解P1003[铺地毯]
 date: 2019-04-05 16:42:51
 tags:
- - 题解
  - 模拟
+ - C++
 categories:
- - 题解
+ - 算法
 mathjax: true
 ---
 

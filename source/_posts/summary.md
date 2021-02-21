@@ -2,7 +2,9 @@
 title: 网站更新
 date: 2021-02-09 12:11:07
 tags:
- - 总结
+ - 站点
+categories:
+ - 计算机
 ---
 
 好好总结一下这次网站的大更新.
@@ -232,15 +234,15 @@ window.location = window.location.href.replace(window.location.host, direct);
 
 黑白模式：
 
-![](/assets/notice-pic1.png)
+![](/assets/summary-pic3.png)
 
 白天模式：
 
-![](/assets/notice-pic2.png)
+![](/assets/summary-pic4.png)
 
 夜晚模式：
 
-![](/assets/notice-pic3.png)
+![](/assets/summary-pic5.png)
 
 **Copyright ©2021 Xecades**
 

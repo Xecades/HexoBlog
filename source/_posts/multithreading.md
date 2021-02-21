@@ -5,7 +5,7 @@ tags:
  - Python
  - 多线程
 categories:
- - Python
+ - 计算机
 author: "Hash"
 thumbnail: /assets/multiprocessing-thumbnail.png
 ---

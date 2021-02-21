@@ -3,9 +3,9 @@ layout: post
 title: Nazo 攻略
 date: 2020-02-16 22:37:42
 tags:
- - 题解
+ - Nazo
 categories:
- - 题解
+ - 算法
 ---
 
 这是我写的一个网页解谜游戏 Nazo 的攻略.

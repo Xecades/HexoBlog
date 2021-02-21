@@ -3,7 +3,8 @@ title: 欧拉恒等式 e^(iπ)+1=0 的娱乐性证明
 mathjax: true
 date: 2020-02-28 09:20:07
 tags:
- - 数学
+ - 证明
+ - 欧拉恒等式
 categories:
  - 数学
 ---

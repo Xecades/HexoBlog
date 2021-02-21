@@ -4,7 +4,8 @@ mathjax: true
 date: 2020-12-13 12:22:08
 tags:
  - 魔方
- - 数学
+ - 推导
+ - 群论
 categories:
  - 数学
 ---

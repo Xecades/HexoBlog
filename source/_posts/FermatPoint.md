@@ -3,7 +3,6 @@ title: 使用复数方法寻找凸多边形的费马点
 mathjax: true
 date: 2021-01-09 20:23:17
 tags:
- - 数学
  - 证明
  - 复数
 categories:

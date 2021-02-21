@@ -1,6 +1,11 @@
 ---
 title: test - 内容模板
 date: 2020-02-18 10:45:33
+tags:
+ - 模板
+ - 站点
+categories:
+ - 计算机
 ---
 
 My Awesome Test!

@@ -3,10 +3,10 @@ title: 可推广的尺规作图思想 - 以正五边形为例
 mathjax: true
 date: 2020-02-27 21:56:13
 tags:
- - 数学
- - 捣鼓
+ - 尺规作图
+ - 复数
 categories:
- - 捣鼓
+ - 数学
 ---
 
 <!-- placeholder -->

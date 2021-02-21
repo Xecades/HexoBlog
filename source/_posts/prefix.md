@@ -3,7 +3,7 @@ layout: post
 title: 前缀和
 date: 2019-11-10 17:35:54
 tags:
- - 算法
+ - 前缀和
 categories:
  - 算法
 mathjax: true

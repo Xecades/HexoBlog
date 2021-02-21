@@ -3,6 +3,8 @@ title: Poem
 date: 2021-02-16 20:26:46
 tags:
  - 诗歌
+categories:
+ - 文学
 author: "Tagore (Perhaps)"
 thumbnail: /assets/Poem1-thumbnail.png
 ---

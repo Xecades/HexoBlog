@@ -2,10 +2,10 @@
 title: 题解P1125[笨小猴]
 date: 2019-02-13 15:06:39
 tags:
- - 题解
  - 库函数
+ - C++
 categories:
- - 题解
+ - 算法
 mathjax: true
 ---
 

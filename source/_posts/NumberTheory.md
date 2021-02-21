@@ -1,20 +1,21 @@
 ---
-title: 数论 - OwO的讲课笔记
+title: 数论 - OwO 的讲课笔记
 date: 2019-07-30 19:56:38
 tags:
- - 数学
+ - 数论
+ - 笔记
 categories:
  - 数学
 password: 102938
 mathjax: true
 ---
 
-在成都七中听OwO讲数论的笔记(写上博客是为了方便查阅)
+在成都七中听 OwO 讲数论的笔记 (写上博客是为了方便查阅)
 
 <!-- more -->
 
 {% note warning warning %}
-咕咕咕
+因为各种原因本文不再加密
 {% endnote %}
 
 ---
@@ -388,20 +389,5 @@ $$a^{-1} \equiv a^{p-2} \quad(\bmod p)$$
 用快速幂实现，复杂度为$\Theta(\lg m)$. 
 
 ---
-## 例题
 
-### $\mathtt{上帝与集合的正确用法}$
-
->给定正整数$a,m$，求（无限个$a$）
->$$a^{a^{a^{a^{\cdot^{\cdot^{\cdot}}}}}} \bmod m$$
->$1 \leq a<m \leq 10^{9}$. 
-
-题目未保证$a,m$互质，所以要用扩展欧拉定理. 从问题$(a,m)$递归到$(a,\mu(m))$，当$m=1$时停止递归并返回$1$. 将取模写成一个函数
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=f(a,&space;m)=\left\{\begin{array}{ll}{a}&space;&&space;{a<m}&space;\\&space;{a&space;\bmod&space;m&plus;m}&space;&&space;{a&space;\geq&space;m}\end{array}\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?f(a,&space;m)=\left\{\begin{array}{ll}{a}&space;&&space;{a<m}&space;\\&space;{a&space;\bmod&space;m&plus;m}&space;&&space;{a&space;\geq&space;m}\end{array}\right." title="f(a, m)=\left\{\begin{array}{ll}{a} & {a<m} \\ {a \bmod m+m} & {a \geq m}\end{array}\right." /></a>
-
-递归次数是对少呢？
-
-当$m$是偶数时，所有偶数都与$m$不互质，所以
-
-所以我咕咕咕了……
+后略。

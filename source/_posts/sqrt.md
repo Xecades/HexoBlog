@@ -2,8 +2,6 @@
 layout: post
 title: 手动开平方
 date: 2019-11-10 22:50:52
-tags:
- - 数学
 categories:
  - 数学
 mathjax: true

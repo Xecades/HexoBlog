@@ -3,8 +3,6 @@ title: 另一种计算 π 的方法
 mathjax: true
 date: 2020-12-18 16:02:32
 tags:
- - 数学
- - 捣鼓
  - 圆周率
 categories:
  - 数学

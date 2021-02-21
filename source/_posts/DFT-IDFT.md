@@ -3,11 +3,10 @@ title: 「离散傅里叶变换」和「离散傅里叶反变换」
 mathjax: true
 date: 2021-01-30 20:00:10
 tags:
- - 傅里叶变换
- - DFT
- - 信息学
+ - DFT & IDFT
+ - FFT
 categories:
- - 信息学
+ - 数学
 ---
 
 **离散傅里叶变换**（Discrete Fourier Transform, DFT）和**离散傅里叶反变换**（Inverse Discrete Fourier Transform, IDFT） 是鼎鼎大名的**快速傅里叶变换**（Fast Fourier Transform, FFT）的前置知识.

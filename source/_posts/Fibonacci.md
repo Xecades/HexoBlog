@@ -3,10 +3,10 @@ title: 斐波那契数列通项公式推导
 mathjax: true
 date: 2020-11-21 11:56:37
 tags:
- - 数学
+ - 斐波那契
  - 特征方程
 categories:
- - 捣鼓
+ - 数学
 ---
 
 <!-- placeholder -->

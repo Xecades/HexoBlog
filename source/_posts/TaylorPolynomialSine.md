@@ -3,7 +3,8 @@ title: 关于正弦函数的泰勒级数展开的证明
 mathjax: true
 date: 2020-06-13 15:36:42
 tags:
- - 数学
+ - 泰勒展开
+ - 证明
 categories:
  - 数学
 ---

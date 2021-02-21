@@ -2,7 +2,9 @@
 title: Code Snippets
 date: 2021-02-07 00:12:45
 tags:
- - Snippets
+ - 代码片段
+categories:
+ - 计算机
 ---
 
 <!-- placeholder -->

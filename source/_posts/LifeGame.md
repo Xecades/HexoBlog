@@ -3,13 +3,15 @@ layout: post
 title: 康威生命游戏 | 元胞自动机
 date: 2020-01-17 20:42:46
 tags:
- - 捣鼓
+ - 元胞自动机
+ - 生命游戏
 categories:
- - 捣鼓
+ - 计算机
 thumbnail: /assets/LifeGame-thumbnail.png
 ---
 
 <!-- placeholder -->
+
 {% cq %} 元胞自动机(cellular automata,CA)是一种时间、空间、状态都离散，
 空间相互作用和时间因果关系为局部的网格动力学模型，
 具有模拟复杂系统时空演化过程的能力.  {% endcq %}

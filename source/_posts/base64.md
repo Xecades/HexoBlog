@@ -3,9 +3,9 @@ title: 关于 Base64 编码的娱乐性代码 (笑)
 mathjax: true
 date: 2020-03-04 22:20:25
 tags:
- - 捣鼓
+ - 加密
 categories:
- - 捣鼓
+ - 计算机
 ---
 
 众所周知，我最喜欢的编码是 Base64，~~因为它最简单~~

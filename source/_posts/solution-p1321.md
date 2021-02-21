@@ -2,10 +2,10 @@
 title: 题解P1321[单词覆盖还原]
 date: 2019-05-12 08:37:30
 tags:
- - 题解
  - 字符串
+ - C++
 categories:
- - 题解
+ - 算法
 mathjax: true
 ---
 

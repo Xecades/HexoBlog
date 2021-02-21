@@ -2,9 +2,9 @@
 title: 运算符优先级
 date: 2019-07-12 06:43:08
 tags:
- - C++11
+ - C++
 categories:
- - 杂项
+ - 计算机
 mathjax: true
 ---
 

@@ -3,9 +3,9 @@ title: Bookmarklet 小书签
 mathjax: true
 date: 2020-02-23 09:31:12
 tags:
- - 捣鼓
+ - Javascript
 categories:
- - 捣鼓
+ - 计算机
 ---
 
 <!-- placeholder -->

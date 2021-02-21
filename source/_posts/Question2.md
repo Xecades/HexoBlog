@@ -3,7 +3,7 @@ title: 一个有趣的数学问题的证明
 mathjax: true
 date: 2021-01-09 17:51:09
 tags:
- - 数学
+ - 复数
  - 证明
 categories:
  - 数学

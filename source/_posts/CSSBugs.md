@@ -4,13 +4,14 @@ mathjax: true
 date: 2020-04-05 10:34:40
 tags:
  - CSS
+ - bug
+categories:
+ - 计算机
 ---
 
-margin 塌陷和 margin 合并是 CSS 的两个经典 bug
+margin 塌陷和 margin 合并是 CSS 的两个经典 bug.
 
-{% cq %} 有亿点迷…… {% endcq %}
-
-下面来讲一下它们的处理方法
+下面来讲一下它们的处理方法.
 
 <!-- more -->
 

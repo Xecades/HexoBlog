@@ -378,7 +378,8 @@ lazyload:
 
 # 站内搜索插件
 search:
-  enable: false
+  enable: true
+  display: false
   path: search.json
   field: All  # Page | Post | All
 
@@ -388,7 +389,7 @@ note: true
 # fold 内容折叠插件
 fold: 
   enable: true
-  summary:   # 默认摘要
+  summary: 点击展开   # 默认摘要
   motion: 
 
 # 图片点击放大插件

@@ -332,7 +332,7 @@ footer:
   statistics: 
 
     # 选择 LeanCloud/busuanzi 为网站计数。如果你完全不想启用，将 `use` 项留空即可
-    use:   # leancloud | busuanzi
+    use: busuanzi
 
     # 如果选择使用 LeanCloud，则需完善下面的配置项
     leancloud: 
@@ -345,7 +345,7 @@ footer:
       enable: true
       before_text: '' # 展示在数据前的内容，支持 HTML
       after_text: Viewers  # 展示在数据后的内容，支持 HTML
-      divider: '&nbsp;&nbsp;&nbsp;|' # 分隔符，HTML 语法支持
+      divider: '&nbsp;&nbsp;&nbsp;&nbsp;|' # 分隔符，HTML 语法支持
     
     # 全站 PV（Page Views）
     site_pv:
@@ -358,7 +358,7 @@ footer:
     page_pv:
       enable: true
       before_text: ''
-      after_text: Views 
+      after_text: 'Views'
 
   # 自定义页脚，支持 markdown
   custom_text: 

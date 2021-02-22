@@ -356,7 +356,7 @@ footer:
     
     # 页面 PV
     page_pv:
-      enable: true
+      enable: false
       before_text: ''
       after_text: 'Views'
 

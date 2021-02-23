@@ -231,7 +231,7 @@ bool check()
 
 {% linkcard "https://blog.xecades.xyz/articles/CubeSimulator/" "用于学术研究的魔方模拟器" %}
 
-以操作 “左上” 为例，也就是指令 `RU`.
+以操作 “上左” 为例，也就是指令 `RU`.
 
 我们把魔方的每一个格子依次编号为 1 ~ 54：
 

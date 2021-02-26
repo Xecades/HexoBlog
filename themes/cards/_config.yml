@@ -62,6 +62,8 @@ navbar:
       url: /archives/
     - name: 留言
       url: /msg/
+    - name: 说说
+      url: /talk/
     - name: 开往
       url: https://travellings.now.sh/
     - name: RSS

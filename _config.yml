@@ -170,7 +170,7 @@ service_worker:
 bb:
  title: 说说
  appId: xBSH41FoqqfS6h7SkxvYX4tP-MdYXbMMI
- appKey: KfYtJAJA56Mexk6PK823pNab
+ appKey: ynOzp9Y5o89l6GfaE7A87fvS
  serverURLs: https://xbsh41fo.api.lncldglobal.com
  limit: 10
  path: talk

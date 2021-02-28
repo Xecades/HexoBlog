@@ -64,6 +64,8 @@
             padding 16px 10px 16px 10px
             border 0 !important
             background-color transparent
+            width 40px
+            height 52px
 
             *
                 width 20px
@@ -77,12 +79,11 @@
             display none
             animation slide-in 0.15s ease 1
             position absolute
-            left 12px
             right 12px
             top $header_height
             z-index 9999
             border-radius 6px
-            padding 24px
+            padding 24px 0
             background var(--bg-content-color)
             box-shadow 1px 1px 5px 0 rgba(0,0,0,.02),1px 1px 15px 0 rgba(0,0,0,.03)
             justify-items center
@@ -93,7 +94,12 @@
                 display flex
 
             .dropdown-menu
-                padding 10px
+                padding 10px 34px
+                transition .2s
+                text-align center
+
+                &:hover
+                    background #f3f3f3
 
 @keyframes slide-in {
     0% {

@@ -48,11 +48,6 @@
     width 9px !important
     height 9px !important
 
-@media screen and (max-width: 762px)
-    ::-webkit-scrollbar
-        width 18px !important
-        height 18px !important
-
 ::-webkit-scrollbar-corner
     background #ffffff4d
     border-width 1px
@@ -120,6 +115,15 @@ html
 @media screen and (max-width:650px)
     body
         --space $space_sm
+
+    #twikoo .tk-meta-input .el-input
+        width 100% !important
+        
+    .tk-input textarea
+        background-image unset !important
+
+    .TIY-container
+        height calc(100vh - 50px) !important
 
 article
 aside

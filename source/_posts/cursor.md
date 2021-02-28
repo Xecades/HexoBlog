@@ -29,7 +29,7 @@ thumbnail: /assets/cursor-thumbnail.png
 
 ## `0x01` 设置实体指针
 
-> “实体指针” 就是那个深色的小点啦
+> "实体指针" 就是那个深色的小点啦
 
 为了让页面所有的元素都有这个效果，直接对 `*` 设置就好了.
 
@@ -55,7 +55,7 @@ CSS 代码如下：
 
 ## `0x02` 生成跟随的圆圈
 
-> ”圆圈“ 指浅色大一点的圆，采用 DOM 渲染.
+> "圆圈" 指浅色大一点的圆，采用 DOM 渲染.
 
 我们用一个类来封装这个指针：
 
@@ -153,11 +153,11 @@ document.onmouseleave = e => this.cursor.classList.add("hidden");
 
 ![](/assets/cursor-gif4.gif)
 
-首先明确一个概念：“元素” 是什么？
+首先明确一个概念："元素" 是什么？
 
-在这里 “元素” 指 “**可以点击的 DOM 对象**”.
+在这里 "元素" 指 "**可以点击的 DOM 对象**".
 
-那到底怎么教会计算机区分 “可以点击的” 和 “不可以点击的” 呢？
+那到底怎么教会计算机区分 "可以点击的" 和 "不可以点击的" 呢？
 
 思考这个问题的时候，我第一个想到的是判断元素标签是不是 `<a>`、`<button>` 等，但这样做有个很大的弊端，请考虑下面这个元素：
 
@@ -165,11 +165,11 @@ document.onmouseleave = e => this.cursor.classList.add("hidden");
 <span onclick="window.location='/'" style="cursor:pointer">Click ME!</span>
 ```
 
-这种设计的 “按钮” 在前端十分常见，但刚刚的方法不能起作用，这样我们不得不换一个思路：
+这种设计的 "按钮" 在前端十分常见，但刚刚的方法不能起作用，这样我们不得不换一个思路：
 
-一般而言，网页设计者会把能点击的元素加上 `cursor: pointer` 的样式，来提醒用户 “这是个按钮”，所以，只需要检测这个元素是否有 `cursor: pointer` 属性即可.
+一般而言，网页设计者会把能点击的元素加上 `cursor: pointer` 的样式，来提醒用户 "这是个按钮"，所以，只需要检测这个元素是否有 `cursor: pointer` 属性即可.
 
-显然，我们不能用 `el.style["cursor"] == pointer` 来判断，因为有些元素是 ”天生自带“ pointer 样式的，网页设计者不会再加额外的 CSS 属性（例如 `<a>` 标签）. 
+显然，我们不能用 `el.style["cursor"] == pointer` 来判断，因为有些元素是 "天生自带" pointer 样式的，网页设计者不会再加额外的 CSS 属性（例如 `<a>` 标签）. 
 
 所以，我们要使出必杀技，`window.getComputedStyle()` 函数（[MDN 文档](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/getComputedStyle)）. 这个函数返回元素**最终渲染的样式**.
 
@@ -226,7 +226,7 @@ this.scr.innerHTML = `* {cursor: url("data:image/svg+xml,<svg xmlns='http://www.
 ```js
 document.onmouseover  = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.add("hover");
 document.onmouseout   = e => this.pt.includes(e.target.outerHTML) && this.cursor.classList.remove("hover");
-// 这里采用位运算 ”&&“ 压缩代码（同时提高速度）
+// 这里采用位运算 "&&" 压缩代码（同时提高速度）
 ```
 
 <!-- placeholder -->
@@ -237,7 +237,7 @@ document.onmouseout   = e => this.pt.includes(e.target.outerHTML) && this.cursor
 
 ![](/assets/cursor-gif5.gif)
 
-浅色圆圈总是 ”跟不上“ 深色指针，这里我们简单地使用**插值**来实现，记录指针 ”上一步“ 的位置 `this.pos.prev` 和 ”这一步“ 的位置 `this.pos.curr`，在其间使用线性插值，实现一种 ”滞后“ 的效果.
+浅色圆圈总是 "跟不上" 深色指针，这里我们简单地使用**插值**来实现，记录指针 "上一步" 的位置 `this.pos.prev` 和 "这一步" 的位置 `this.pos.curr`，在其间使用线性插值，实现一种 "滞后" 的效果.
 
 线性插值函数：
 

@@ -1,13 +1,12 @@
 .TIY-container
-    border-radius 5px
     border: 2px solid #eee
-    // box-shadow 0 10px 30px 0 rgba(0, 0, 0, 0.4)
     position relative
     margin 10px 0
     overflow hidden
     resize vertical
     display inline-block
-    width 100%
+    width calc(100% + 2 * var(--space))
+    margin 1rem calc(0rem - var(--space))
     iframe
         position relative
         top 0

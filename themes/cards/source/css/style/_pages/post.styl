@@ -64,7 +64,8 @@
     margin-top calc(var(--space) * -1 - var(--space-float)) !important
     margin-bottom calc(var(--space) / 2) !important
     overflow hidden
-    border-radius $radius_main
+    border-top-left-radius $radius_main
+    border-top-right-radius $radius_main
 
     &:empty
         display none
@@ -79,7 +80,8 @@
         background-origin padding-box
         background-attachment scroll
 
-.post__content
+.post__content,
+.post-entry__content
     p
         line-height $lineheight
 
@@ -132,11 +134,10 @@
     background-color var(--bg-tag-color)
 
 .post__license
-    background-color rgb(245, 245, 245)
     word-break break-all
     margin 3em 0 1em 0
-    padding 0.5rem 0.8rem
-    border-left 4px solid var(--main-color)
+    padding .8rem
+    border 2px solid rgb(245, 245, 245)
     list-style none
 
     p 

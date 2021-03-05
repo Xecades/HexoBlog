@@ -21,15 +21,7 @@ function imgProcess(content) {
 //     });
 // }
 
-hexo.extend.filter.register('after_render:html', (content) => {
-    return imgProcess.call(this, content);
-});
+hexo.extend.filter.register('after_render:html', (content) => imgProcess.call(this, content));
 
-if (hexo.config.use_webp) {
-    // hexo.extend.filter.register('after_render:html', (content) => {
-    //     return webpProcess.call(this, content);
-    // });
-    hexo.extend.filter.register('after_render:html', (content) => {
-        return replacePic.call(this, content);
-    });
-}
+// hexo.extend.filter.register('after_render:html', (content) => webpProcess.call(this, content));
+hexo.config.use_webp && hexo.extend.filter.register('after_render:html', (content) => replacePic.call(this, content));

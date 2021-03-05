@@ -4,9 +4,13 @@ Allow: /articles/
 Allow: /archives/
 Allow: /categories/
 Allow: /tags/
+Allow: /progress/
+Allow: /msg/
+Disallow: /talk/
+Disallow: /s/
 Disallow: /js/
 Disallow: /css/
-Disallow: /images/
+Disallow: /assets/
 
 Sitemap: https://blog.xecades.xyz/sitemap.xml
 Sitemap: https://blog.xecades.xyz/baidusitemap.xml

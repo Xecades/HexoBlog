@@ -8,7 +8,7 @@ function tiy(args) {
     if (args[0] != "")
         file = "?file=" + args[0];
 
-    var height = args[1] || "95vh";
+    var height = args[1] || "500px";
     return `<div class="TIY-container" style="height:${height}"><iframe frameborder="no" src="https://tiy.xecades.xyz/${file}" width="100%" height="100%"></iframe></div>`;
 }
 

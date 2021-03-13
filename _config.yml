@@ -113,15 +113,18 @@ deploy:
     - type: baidu_url_submitter
 
 feed:
+    enable: true
     type: atom
     path: atom.xml
-    limit: 20
+    limit: false
     hub:
     content:
     content_limit: 140
     content_limit_delim: " "
     order_by: -date
     icon: https://s2.ax1x.com/2019/08/10/eOLcH1.png
+    autodiscovery: true
+    template:
 
 sitemap:
     path: sitemap.xml

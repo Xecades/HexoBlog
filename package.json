@@ -34,6 +34,7 @@
     "hexo-service-worker": "^1.0.1",
     "hexo-spoiler": "^1.7.3",
     "hexo-tag-dplayer": "^0.3.3",
+    "hexo-tag-tiy": "^0.0.1",
     "imagemin": "^7.0.1",
     "imagemin-svgo": "^8.0.0"
   },

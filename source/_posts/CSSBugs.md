@@ -69,7 +69,41 @@ margin 塌陷和 margin 合并是 CSS 的两个经典 bug.
 }
 ```
 
-{% tiy "MarginCollapse1" "500px" %}
+{% tiy %}
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>margin 塌陷</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .father {
+            height: 200px;
+            width: 200px;
+            background-color: #00ffff;
+        }
+
+        .son {
+            height: 100px;
+            width: 100px;
+            background-color: #aaffaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>
+{% endtiy %}
 
 ---
 
@@ -103,7 +137,42 @@ margin 塌陷和 margin 合并是 CSS 的两个经典 bug.
 
 现在一切正常，父亲也带着他儿往下挪了
 
-{% tiy "MarginCollapse2" "500px" %}
+{% tiy %}
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>margin 塌陷</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .father {
+            margin-top: 200px; /* Here */
+            height: 200px;
+            width: 200px;
+            background-color: #00ffff;
+        }
+
+        .son {
+            height: 100px;
+            width: 100px;
+            background-color: #aaffaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>
+{% endtiy %}
 
 ---
 
@@ -134,7 +203,43 @@ margin 塌陷和 margin 合并是 CSS 的两个经典 bug.
 ```
 </details>
 
-{% tiy "MarginCollapse3" "500px" %}
+{% tiy %}
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>margin 塌陷</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .father {
+            margin-top: 200px;
+            height: 200px;
+            width: 200px;
+            background-color: #00ffff;
+        }
+
+        .son {
+            margin-top: 100px; /* Here */
+            height: 100px;
+            width: 100px;
+            background-color: #aaffaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>
+{% endtiy %}
 
 然后我们惊奇地发现，`son` 没动！
 
@@ -177,7 +282,43 @@ margin 塌陷和 margin 合并是 CSS 的两个经典 bug.
 ```
 </details>
 
-{% tiy "MarginCollapse4" "600px" %}
+{% tiy %}
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>margin 塌陷</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .father {
+            margin-top: 200px;
+            height: 200px;
+            width: 200px;
+            background-color: #00ffff;
+        }
+
+        .son {
+            margin-top: 300px; /* Here */
+            height: 100px;
+            width: 100px;
+            background-color: #aaffaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>
+{% endtiy %}
 
 `son` 的确动了，但却带着他爸跑了
 
@@ -224,7 +365,44 @@ margin 塌陷和 margin 合并是 CSS 的两个经典 bug.
 ```
 </details>
 
-{% tiy "MarginCollapse5" "600px" %}
+{% tiy %}
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>margin 塌陷</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .father {
+            margin-top: 200px;
+            height: 200px;
+            width: 200px;
+            background-color: #00ffff;
+            border-top: 1px solid transparent; /* Here */
+        }
+
+        .son {
+            margin-top: 100px;
+            height: 100px;
+            width: 100px;
+            background-color: #aaffaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>
+{% endtiy %}
 
 但这个方案**极不推荐**.
 
@@ -278,7 +456,49 @@ overflow: hidden;
 ```
 </details>
 
-{% tiy "MarginCollapse6" "600px" %}
+{% tiy %}
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>margin 塌陷</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .father {
+            margin-top: 200px;
+            height: 200px;
+            width: 200px;
+            background-color: #00ffff;
+            /* 下面五个选一个就好了 */
+            position: absolute;
+            /* display: inline-block; */
+            /* float: left; */
+            /* float: right; */
+            /* overflow: hidden; */
+        }
+
+        .son {
+            margin-top: 100px;
+            height: 100px;
+            width: 100px;
+            background-color: #aaffaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>
+{% endtiy %}
 
 这样就好使了
 
@@ -327,7 +547,38 @@ html 长这样：
 }
 ```
 
-{% tiy "MarginMerge1" "500px" %}
+{% tiy %}
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>margin 合并</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bro1 {
+            height: 100px;
+            background-color: #00ffff;
+        }
+
+        .bro2 {
+            height: 100px;
+            background-color: #aaffaa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bro1"></div>
+    <div class="bro2"></div>
+</body>
+
+</html>
+{% endtiy %}
 
 ---
 
@@ -339,7 +590,40 @@ html 长这样：
 
 理论上，他俩应该间隔 200 个像素
 
-{% tiy "MarginMerge2" "500px" %}
+{% tiy %}
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>margin 合并</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bro1 {
+            height: 100px;
+            background-color: #00ffff;
+            margin-bottom: 100px;
+        }
+
+        .bro2 {
+            height: 100px;
+            background-color: #aaffaa;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bro1"></div>
+    <div class="bro2"></div>
+</body>
+
+</html>
+{% endtiy %}
 
 但实际上，只间隔了 100 像素
 
@@ -404,7 +688,46 @@ BFC 一样可以解决 margin 合并
 ```
 </details>
 
-{% tiy "MarginMerge3" "500px" %}
+{% tiy %}
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <title>margin 合并</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .father {
+            overflow: hidden;
+        }
+
+        .bro1 {
+            height: 100px;
+            background-color: #00ffff;
+            margin-bottom: 100px;
+        }
+
+        .bro2 {
+            height: 100px;
+            background-color: #aaffaa;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bro1"></div>
+    <div class="father">
+        <div class="bro2"></div>
+    </div>
+</body>
+
+</html>
+{% endtiy %}
 
 的确解决了，但完美吗？
 

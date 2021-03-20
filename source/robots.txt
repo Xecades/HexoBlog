@@ -4,9 +4,8 @@ Allow: /articles/
 Allow: /archives/
 Allow: /categories/
 Allow: /tags/
-Allow: /progress/
 Allow: /msg/
-Disallow: /talk/
+Allow: /talk/
 Disallow: /s/
 Disallow: /js/
 Disallow: /css/

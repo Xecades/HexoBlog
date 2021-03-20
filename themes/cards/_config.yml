@@ -56,8 +56,6 @@ navbar:
       url: https://xecades.xyz/
     - name: 首页
       url: /
-    - name: 时光
-      url: /progress/
     - name: 归档
       url: /archives/
     - name: 留言

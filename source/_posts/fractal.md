@@ -147,7 +147,7 @@ $$=\frac{2}{5}\sqrt{3}a^2$$
 
 ![](/assets/fractal-pic8.png)
 
-{% linkcard "https://file.xecades.xyz/Program/Mandelbrot.html" "Mandelbrot C++ 源码" %}
+{% linkcard "https://one.xecades.xyz/%F0%9F%92%BB%20Projects/Mandelbrot/Mandelbrot.cpp" "Mandelbrot C++ 源码" %}
 
 {% note tip tip %}
 **优点**: 速度极快，代码相对简单，后期上色处理容易

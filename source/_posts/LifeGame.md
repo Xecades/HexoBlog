@@ -63,7 +63,7 @@ thumbnail: /assets/LifeGame-thumbnail.png
 请在Linux环境下编译运行
 {% endnote %}
 
-{% linkcard "https://file.xecades.xyz/Linux/LIFE/LIFE.html" "LIFE" %}
+{% linkcard "https://one.xecades.xyz/%F0%9F%92%BB%20Projects/LIFE/LIFE.cpp" "LIFE" %}
 
 或者在线模拟器:
 

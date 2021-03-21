@@ -63,9 +63,11 @@ output 层是输出层，输出是 0 ~ 9 十个数字，故限制神经元数为
 
 训练数据和测试数据无重复部分，这样保证神经网络是真正的认到了数字而不是记下了数据. 
 
-由于两文件太大，无法嵌入网页中，故请自行下载：[链接](https://xecades.lanzous.com/iEHILeiombe). 
+由于两文件太大，无法嵌入网页中，故请自行下载：
 
-若出现各种原因无法下载，可以 QQ 联系：2135174618.
+ - [蓝奏云链接](https://xecades.lanzous.com/iEHILeiombe). 
+ - [OneDrive 镜像](https://one.xecades.xyz/%F0%9F%92%BB%20Projects/Artificial%20Intelligence/MNIST.7z)
+ - QQ 联系：2135174618.
 
 点击两加载按钮，选择对应文件，稍等片刻即完成加载. 
 
@@ -79,9 +81,11 @@ output 层是输出层，输出是 0 ~ 9 十个数字，故限制神经元数为
 
 这里我提供自己花 5 个小时训练的全数据和几分钟训练的 5% 数据，供参考：
 
-{% linkcard "https://file.xecades.xyz/Other/100TestData.txt" "100% 数据" %}
+{% linkcard "https://one.xecades.xyz/%F0%9F%92%BB%20Projects/Artificial%20Intelligence/5TestData.txt" "5% 数据" %}
 
-{% linkcard "https://file.xecades.xyz/Other/5TestData.txt" "5% 数据" %}
+{% linkcard "https://one.xecades.xyz/%F0%9F%92%BB%20Projects/Artificial%20Intelligence/100TestData.txt" "100% 数据 #1" %}
+
+{% linkcard "https://one.xecades.xyz/%F0%9F%92%BB%20Projects/Artificial%20Intelligence/100TestData2.txt" "100% 数据 #2" %}
 
 在运行完学习后，可以点击保存数据. 
 
@@ -91,7 +95,7 @@ output 层是输出层，输出是 0 ~ 9 十个数字，故限制神经元数为
 
 ![](/assets/neuralNetwork-pic4.png)
 
-点就完事，不要多点. 
+点就完事. 
 
 ---
 

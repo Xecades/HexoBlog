@@ -205,7 +205,7 @@ string encode(string str) // 此段 Base64 加密代码来自网络，稍有修�
 }
 ```
 
-{% linkcard "https://file.xecades.xyz/Other/Database.txt" "单词数据库" %}
+{% linkcard "https://one.xecades.xyz/%E2%9C%A8%20Other/English%20Words.txt" "单词数据库" %}
 
 {% note info info %}
 这是 Windows 下的代码，如果想在 Linux 下运行，把 windows.h 和标题修改删了即可

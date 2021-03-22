@@ -104,6 +104,8 @@ hidden: true
 
 ## TIY html 代码展示
 
+`hexo-tag-tiy`
+
 {% tiy %}
 <!DOCTYPE html>
 <html lang="zh-cn">

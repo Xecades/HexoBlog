@@ -10,7 +10,7 @@ author: "Hash"
 thumbnail: /assets/multiprocessing-thumbnail.png
 ---
 
-作者的笔记，介绍 Python 中的**多进程**.
+作者的笔记，介绍 Python 中的**多线程**.
  
  > 本文由 [@Hash](https://one.wh0th.ink/) 撰写，由 @Xecades 代为发布，并稍作更改.
  > 

@@ -3,11 +3,13 @@ title: Hexo 插件 — 在线 HTML 编辑器
 date: 2021-03-22 22:59:31
 tags:
  - TIY
+ - Hexo
 categories:
  - 计算机
+thumbnail: /assets/HexoTagTIY-thumbnail.png
 ---
 
-这几天拿我开发的 TIY 写了个 Hexo 封装版本，叫 `hexo-tag-tiy`，可用作在线 HTML 代码展示、运行和调试.
+前几天拿我开发的 TIY 写了个 Hexo 封装版本，叫 `hexo-tag-tiy`，可用作在线 HTML 代码展示、运行和调试.
 
 <!-- more -->
 

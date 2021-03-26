@@ -163,7 +163,7 @@ use_webp: true
 service_worker:
     maximumFileSizeToCacheInBytes: 5242880
     staticFileGlobs:
-        - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2}
+        - public/**/*.{js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2,webp}
     stripPrefix: public
     verbose: true
 

@@ -251,7 +251,7 @@ $$S(\delta)=\omega_n^0+\omega_n^\delta+\omega_n^{2\delta}+\cdots+\omega_n^{(n-1)
 
 $$S(j-k)=S(\delta)=S(0)=n$$
 
-$j=k=0$，即 $j=k$ 时，$S(\delta)=n$.
+$j-k=0$，即 $j=k$ 时，$S(\delta)=n$.
 
 ---
 

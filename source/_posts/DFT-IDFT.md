@@ -7,6 +7,7 @@ tags:
  - FFT
 categories:
  - 数学
+thumbnail: /assets/DFT-IDFT-thumbnail.png
 ---
 
 **离散傅里叶变换**（Discrete Fourier Transform, DFT）和**离散傅里叶反变换**（Inverse Discrete Fourier Transform, IDFT） 是鼎鼎大名的**快速傅里叶变换**（Fast Fourier Transform, FFT）的前置知识.

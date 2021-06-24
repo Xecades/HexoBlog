@@ -34,6 +34,9 @@
 //     width 0 !important
 //     height 0 !important
 
+// .medium-zoom-image:not(.medium-zoom-image--opened)
+//     zoom 120%
+
 .medium-zoom-overlay
     z-index 100
 
@@ -84,10 +87,13 @@ body
 mjx-mtext *
     font-family $global_font !important
 
-// mjx-container
-//     transition transform .3s
-//     &:hover
-//         transform scale(1.1)
+mjx-container
+    outline none !important
+    font-size 108% !important
+
+    mjx-table
+        mjx-mtr
+            line-height normal
 
 .highlight
     background-color rgba(0, 0, 0, .02) !important

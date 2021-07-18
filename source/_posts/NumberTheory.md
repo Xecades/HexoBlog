@@ -29,7 +29,7 @@ mathjax: true
 
 时间复杂度(调和级数):
 
-$$\sum_{x=2}^{n}\left\lfloor\frac{n}{x}\right\rfloor \leq n \sum_{x=1}^{n} \frac{1}{x}=\Theta(n \ln n)$$
+$$\sum_{x=2}^{n}\left\lfloor\dfrac{n}{x}\right\rfloor \leq n \sum_{x=1}^{n} \dfrac{1}{x}=\Theta(n \ln n)$$
 
 ### 不朴素的实现
 
@@ -38,7 +38,7 @@ $$\sum_{x=2}^{n}\left\lfloor\frac{n}{x}\right\rfloor \leq n \sum_{x=1}^{n} \frac
 时间复杂度(梅滕斯第二定理):
 
 $$
-\sum_{p \in \mathbb{P}}^{n}\left\lfloor\frac{n}{p}\right\rfloor \leq n \sum_{p \in \mathbb{P}}^{n} \frac{1}{p}=\Theta(n \ln \ln n)
+\sum_{p \in \mathbb{P}}^{n}\left\lfloor\dfrac{n}{p}\right\rfloor \leq n \sum_{p \in \mathbb{P}}^{n} \dfrac{1}{p}=\Theta(n \ln \ln n)
 $$
 
 ### 优化实现
@@ -140,11 +140,11 @@ $$as=bt$$
 
 即
 
-$$s=\frac{b}{a}t=\frac{b/d}{a/d}t$$
+$$s=\dfrac{b}{a}t=\dfrac{b/d}{a/d}t$$
 
 也就是说通解为
 
-<center><a href="https://www.codecogs.com/eqnedit.php?latex=\left\{\begin{array}&space;{l}&space;{x=x_{0}&plus;\frac{b}&space;{d}&space;k}&space;\\&space;{y=y_{0}-\frac{a}&space;{d}&space;k}\end{array}(k&space;\in&space;\mathbb{Z})\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left\{\begin{array}&space;{l}&space;{x=x_{0}&plus;\frac{b}&space;{d}&space;k}&space;\\&space;{y=y_{0}-\frac{a}&space;{d}&space;k}\end{array}(k&space;\in&space;\mathbb{Z})\right." title="\left\{\begin{array} {l} {x=x_{0}+\frac{b} {d} k} \\ {y=y_{0}-\frac{a} {d} k}\end{array}(k \in \mathbb{Z})\right." /></a></center>
+<center><a href="https://www.codecogs.com/eqnedit.php?latex=\left\{\begin{array}&space;{l}&space;{x=x_{0}&plus;\dfrac{b}&space;{d}&space;k}&space;\\&space;{y=y_{0}-\dfrac{a}&space;{d}&space;k}\end{array}(k&space;\in&space;\mathbb{Z})\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left\{\begin{array}&space;{l}&space;{x=x_{0}&plus;\dfrac{b}&space;{d}&space;k}&space;\\&space;{y=y_{0}-\dfrac{a}&space;{d}&space;k}\end{array}(k&space;\in&space;\mathbb{Z})\right." title="\left\{\begin{array} {l} {x=x_{0}+\dfrac{b} {d} k} \\ {y=y_{0}-\dfrac{a} {d} k}\end{array}(k \in \mathbb{Z})\right." /></a></center>
 
 ---
 # 同余
@@ -284,7 +284,7 @@ $$\sigma_t(n)=\sum_{d\mid n}d^t=\prod\sum^{r_i}_{k=0}p_i^{kt}$$
 
 不妨设$n_1\leq n_2$，那么$n_1\leq\sqrt n$，$n_2\geq\sqrt n$. 
 
-$\Theta(\sqrt n)$枚举$n_1$，得到$n_2=\frac{n}{n_1}$，再枚举$n_2$的倍数判断即可. 
+$\Theta(\sqrt n)$枚举$n_1$，得到$n_2=\dfrac{n}{n_1}$，再枚举$n_2$的倍数判断即可. 
 
 注意到枚举$n_2$的次数是$n_1$，所以时间复杂度为不超过$\sqrt n$的约束和，看起来上界是$\Theta(n)$，但因为约数很少，所以复杂度远不到上界，可以通过. 
 
@@ -308,11 +308,11 @@ $\Theta(\sqrt n)$枚举$n_1$，得到$n_2=\frac{n}{n_1}$，再枚举$n_2$的倍�
 
 考虑容斥原理，用总的减去一个质数的平方的倍数，加上两个质数乘积的平方的倍数，减去三个质数乘积的平方的倍数……
 
-$$n-\sum_{p \in \mathbb{P}}\left\lfloor\frac{n}{p^{2}}\right\rfloor+\sum_{p_{1}, p_{2} \in \mathbb{P}}\left\lfloor\frac{n}{p_{1}^{2} p_{2}^{2}}\right\rfloor-\sum_{p_{1}, p_{2}, p_{3} \in \mathbb{P}}\left\lfloor\frac{n}{p_{1}^{2} p_{2}^{2} p_{3}^{2}} \right\rfloor+\cdots$$
+$$n-\sum_{p \in \mathbb{P}}\left\lfloor\dfrac{n}{p^{2}}\right\rfloor+\sum_{p_{1}, p_{2} \in \mathbb{P}}\left\lfloor\dfrac{n}{p_{1}^{2} p_{2}^{2}}\right\rfloor-\sum_{p_{1}, p_{2}, p_{3} \in \mathbb{P}}\left\lfloor\dfrac{n}{p_{1}^{2} p_{2}^{2} p_{3}^{2}} \right\rfloor+\cdots$$
 
 即
 
-$$\sum_{x \geq 1} \mu(x)\left\lfloor\frac{n}{x^{2}}\right\rfloor$$
+$$\sum_{x \geq 1} \mu(x)\left\lfloor\dfrac{n}{x^{2}}\right\rfloor$$
 
 $x$的范围是$\sqrt n$，所以时间复杂度是$\Theta(\sqrt n)$. 
 
@@ -333,7 +333,7 @@ $x$的范围是$\sqrt n$，所以时间复杂度是$\Theta(\sqrt n)$.
 
 这个也可以用莫比乌斯函数容斥，枚举公约数$d$，得
 
-$$\varphi(n)=\sum_{d | n} \mu(d) \frac{n}{d}$$
+$$\varphi(n)=\sum_{d | n} \mu(d) \dfrac{n}{d}$$
 
 将n质因数分解
 
@@ -341,7 +341,7 @@ $$n=\prod p_{i}^{r_{i}}$$
 
 代入莫比乌斯函数的定义式，得
 
-$$\varphi(n)=n \prod\left(1-\frac{1}{p_{i}}\right)=\prod p_{i}^{r_{i}-1}\left(p_{i}-1\right)$$
+$$\varphi(n)=n \prod\left(1-\dfrac{1}{p_{i}}\right)=\prod p_{i}^{r_{i}-1}\left(p_{i}-1\right)$$
 
 可以用线性筛$\Theta(n)$求出$1$到所有数的欧拉函数值. 
 

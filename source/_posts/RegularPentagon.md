@@ -56,13 +56,13 @@ CD 即为所求.
 
 ### 两数之商
 
-$a\div b = a\times\frac{1}{b}$
+$a\div b = a\times\dfrac{1}{b}$
 
 ---
 
 ### 求倒数
 
-已知单位线段和长度为 a 的线段，作长度为 $\frac{1}{a}$ 的线段
+已知单位线段和长度为 a 的线段，作长度为 $\dfrac{1}{a}$ 的线段
 
 1. 随意作一角，顶点为 O
 2. 在一条边上取长度为 a 的线段 OA
@@ -145,7 +145,7 @@ $$\varepsilon_1+\varepsilon_2+\varepsilon_3+\varepsilon_4=-1$$
 
 注意到 $\varepsilon_1+\varepsilon_4=\cos\theta+i\sin\theta+\cos\theta-i\sin\theta=2\cos\theta$
 
-所以 $\cos\theta=\frac{1}{2}(\varepsilon_1+\varepsilon_4)$
+所以 $\cos\theta=\dfrac{1}{2}(\varepsilon_1+\varepsilon_4)$
 
 令 $x_1=\varepsilon_1+\varepsilon_4$，$x_2=\varepsilon_2+\varepsilon_3$
 
@@ -174,13 +174,13 @@ $x_1,x_2$ 是方程 $x^2+x-1=0$ 的两个根
 
 通过求根公式，我们可以得到
 
-$$x=\frac{-1\pm\sqrt{5}}{2}$$
+$$x=\dfrac{-1\pm\sqrt{5}}{2}$$
 
 又因为 $x_1>0$，$x_2<0$
 
-有 $x_1=\frac{-1+\sqrt{5}}{2}=2\cos\theta$
+有 $x_1=\dfrac{-1+\sqrt{5}}{2}=2\cos\theta$
 
-则 $\cos\theta=\frac{-1+\sqrt{5}}{4}$
+则 $\cos\theta=\dfrac{-1+\sqrt{5}}{4}$
 
 完.
 
@@ -188,6 +188,6 @@ $$x=\frac{-1\pm\sqrt{5}}{2}$$
 
 ## 欣赏
 
-高斯作正十七边形求出的 $\cos\frac{2\pi}{17}$：
+高斯作正十七边形求出的 $\cos\dfrac{2\pi}{17}$：
 
-$$\cos\frac{2\pi}{17}=\frac{1}{16}(-1+\sqrt{17}+\sqrt{2(17-\sqrt{17})}+2\sqrt{17+3\sqrt{17}-\sqrt{2(17-\sqrt{17})}-2\sqrt{2(17+\sqrt{17})}})$$
+$$\cos\dfrac{2\pi}{17}=\dfrac{1}{16}(-1+\sqrt{17}+\sqrt{2(17-\sqrt{17})}+2\sqrt{17+3\sqrt{17}-\sqrt{2(17-\sqrt{17})}-2\sqrt{2(17+\sqrt{17})}})$$

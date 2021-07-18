@@ -23,7 +23,7 @@ n 久前看到一个 [3Blue1Brown](https://space.bilibili.com/88461692) 的视�
 
 首先，我们揪出两个守恒量：
 
-<center>① 能量守恒：$\frac{1}{2}v_1^2m_1+\frac{1}{2}v_2^2m_2=\mathbf{const}$</center>
+<center>① 能量守恒：$\dfrac{1}{2}v_1^2m_1+\dfrac{1}{2}v_2^2m_2=\mathbf{const}$</center>
 
 <center>② 动量守恒：$m_1v_1+m_2v_2=\mathbf{const}$</center>
 
@@ -37,7 +37,7 @@ n 久前看到一个 [3Blue1Brown](https://space.bilibili.com/88461692) 的视�
 
 我们看到式 ①：
 
-$$\frac{1}{2}v_1^2m_1+\frac{1}{2}v_2^2m_2=\mathbf{const}$$
+$$\dfrac{1}{2}v_1^2m_1+\dfrac{1}{2}v_2^2m_2=\mathbf{const}$$
 
 $m_1$、$m_2$ 都是定值，唯一 (二？) 的变量就是 $v_1$、$v_2$，自然，我们可以联想到椭圆方程，可以画出图像
 
@@ -53,7 +53,7 @@ $m_1$、$m_2$ 都是定值，唯一 (二？) 的变量就是 $v_1$、$v_2$，自
 
 令 $x=\sqrt{m_1}v_1$，$y=\sqrt{m_2}v_2$，则式 ① 可以转换为：
 
-$$\frac{1}{2}x^2+\frac{1}{2}y^2=\mathbf{const}$$
+$$\dfrac{1}{2}x^2+\dfrac{1}{2}y^2=\mathbf{const}$$
 
 即：
 
@@ -69,13 +69,13 @@ $$\sqrt{m_1}x+\sqrt{m_2}y=\mathbf{const}$$
 
 整理一下：
 
-$$y=-\sqrt{\frac{m_1}{m_2}}x+\frac{\mathbf{const}}{\sqrt{m_2}}$$
+$$y=-\sqrt{\dfrac{m_1}{m_2}}x+\dfrac{\mathbf{const}}{\sqrt{m_2}}$$
 
 想到了什么？
 
 **直线方程**
 
-斜率 $-\sqrt{\frac{m_1}{m_2}}$ 为定值
+斜率 $-\sqrt{\dfrac{m_1}{m_2}}$ 为定值
 
 ---
 
@@ -93,7 +93,7 @@ $$y=-\sqrt{\frac{m_1}{m_2}}x+\frac{\mathbf{const}}{\sqrt{m_2}}$$
 
 注意到，每次撞击后对应的点 (不妨称之为 ”状态“) **一定在圆上** (式 ①)，而且状态的变化是**突变型**的，并不连续. 
 
-好了. 第一次，动量守恒和能量守恒同时满足，根据动量守恒 (式 ②)，初始状态和下一步的状态一定在斜率为 $-\sqrt{\frac{m_1}{m_2}}$ 的直线上. 
+好了. 第一次，动量守恒和能量守恒同时满足，根据动量守恒 (式 ②)，初始状态和下一步的状态一定在斜率为 $-\sqrt{\dfrac{m_1}{m_2}}$ 的直线上. 
 
 这说明，下一步的状态一定会转移到 B 点：
 
@@ -110,7 +110,7 @@ $v_1$ 不变，$v_2$ 反转，则下一步状态 (C) 的 x 坐标不变，y 坐�
 
 ![](/assets/PiInCollision-pic8.svg)
 
-因为式 ② 的曲线的斜率为 $-\sqrt{\frac{m_1}{m_2}}$，为定值，所以 $\theta$ 角也为定值. 
+因为式 ② 的曲线的斜率为 $-\sqrt{\dfrac{m_1}{m_2}}$，为定值，所以 $\theta$ 角也为定值. 
 
 于是我们可以一直撞下去：
 
@@ -144,9 +144,9 @@ n 是满足该式的最大整数，**也就是我们要求的碰撞次数**.
 
 不妨假设 $m_1:m_2=100:1$ (其余情况以此类推)
 
-斜率 $-\sqrt{\frac{m_1}{m_2}}=-10$
+斜率 $-\sqrt{\dfrac{m_1}{m_2}}=-10$
 
-则 $\tan\theta=\frac{1}{10}=0.1$
+则 $\tan\theta=\dfrac{1}{10}=0.1$
 
 则 $\theta=\arctan(0.1)$
 

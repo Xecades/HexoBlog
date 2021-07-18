@@ -20,32 +20,32 @@ categories:
 
 圆上每个点与 P 点的距离为 $\sqrt{x^2+r^2}$，则每个点在 P 点处的场强为：
 
-$$\frac{k\sigma}{x^2+r^2}$$
+$$\dfrac{k\sigma}{x^2+r^2}$$
 
 方向斜向右下，根据对称性，圆上的场强矢量和在直线 l 上. 
 
 正交分解可得，每个点在水平方向上对场强的贡献为：
 
-$$\frac{k\sigma}{x^2+r^2}\cdot\cos\theta=\frac{k\sigma}{x^2+r^2}\cdot\frac{x}{\sqrt{x^2+r^2}}$$
+$$\dfrac{k\sigma}{x^2+r^2}\cdot\cos\theta=\dfrac{k\sigma}{x^2+r^2}\cdot\dfrac{x}{\sqrt{x^2+r^2}}$$
 
 那么，圆整体对 P 点的场强为：
 
-$$E_r=\frac{k\sigma}{x^2+r^2}\cdot\frac{x}{\sqrt{x^2+r^2}}\cdot2\pi r$$
+$$E_r=\dfrac{k\sigma}{x^2+r^2}\cdot\dfrac{x}{\sqrt{x^2+r^2}}\cdot2\pi r$$
 
 对其积分：
 
-$$E=\int_0^RE_r\mathrm dr=\int_0^R\frac{k\sigma}{x^2+r^2}\cdot\frac{x}{\sqrt{x^2+r^2}}\cdot2\pi r\mathrm dr$$
+$$E=\int_0^RE_r\mathrm dr=\int_0^R\dfrac{k\sigma}{x^2+r^2}\cdot\dfrac{x}{\sqrt{x^2+r^2}}\cdot2\pi r\mathrm dr$$
 
 整理可得：
 
-$$E=k\sigma\cdot2\pi x\cdot\int_0^Rr\cdot(x^2+r^2)^{-\frac{3}{2}}\mathrm dr$$
+$$E=k\sigma\cdot2\pi x\cdot\int_0^Rr\cdot(x^2+r^2)^{-\dfrac{3}{2}}\mathrm dr$$
 
 易得：
 
-$$[-(x^2+r^2)^{-\frac{1}{2}}]'=r\cdot(x^2+r^2)^{-\frac{3}{2}}$$
+$$[-(x^2+r^2)^{-\dfrac{1}{2}}]'=r\cdot(x^2+r^2)^{-\dfrac{3}{2}}$$
 
 根据牛顿 - 莱布尼茨公式得：
 
-$$E=k\sigma\cdot2\pi x\cdot[-(x^2+R^2)^{-\frac{1}{2}}+(x^2+0^2)^{-\frac{1}{2}}]=k\sigma\cdot2\pi\cdot(1-\frac{x}{\sqrt{x^2+R^2}})$$
+$$E=k\sigma\cdot2\pi x\cdot[-(x^2+R^2)^{-\dfrac{1}{2}}+(x^2+0^2)^{-\dfrac{1}{2}}]=k\sigma\cdot2\pi\cdot(1-\dfrac{x}{\sqrt{x^2+R^2}})$$
 
 done.

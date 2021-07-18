@@ -19,7 +19,7 @@ categories:
 定理如下：
 
 > 对于任意 $n$ 边形，其顶点为 $A_1..A_n$，
-> 取 $O$ 点满足 $\angle A_1OA_2=\angle A_2OA_3=\cdots=\frac{2\pi}{n}$
+> 取 $O$ 点满足 $\angle A_1OA_2=\angle A_2OA_3=\cdots=\dfrac{2\pi}{n}$
 > 那么对于任意点 $P$，有：
 > $$\boxed{\sum_{k=1}^{n}|PA_k|\geq\sum_{k=1}^{n}|OA_k|}$$
 

@@ -11,7 +11,7 @@ categories:
 
 对 $\forall n\in N^*$，试证：
 
-$$\boxed{\prod_{x=1}^{n-1}\sin\frac{x\pi}{n}=\frac{n}{2^{n-1}}}$$
+$$\boxed{\prod_{x=1}^{n-1}\sin\dfrac{x\pi}{n}=\dfrac{n}{2^{n-1}}}$$
 
 <!-- more -->
 
@@ -21,7 +21,7 @@ $$\boxed{\prod_{x=1}^{n-1}\sin\frac{x\pi}{n}=\frac{n}{2^{n-1}}}$$
 
 > 对于 $\forall$ 单位复数 $z$，有：
 > 
-> $$\boxed{|z-1|=2\sin\frac{\theta}{2}}$$
+> $$\boxed{|z-1|=2\sin\dfrac{\theta}{2}}$$
 
 构建单位圆，作辅助线如图：
 
@@ -35,13 +35,13 @@ $$|z-1|=|AB|$$
 
 稍作计算：
 
-$$|z-1|=|AB|=2|AH|=2|OA|\sin\frac{\theta}{2}=2\sin\frac{\theta}{2}$$
+$$|z-1|=|AB|=2|AH|=2|OA|\sin\dfrac{\theta}{2}=2\sin\dfrac{\theta}{2}$$
 
 其中 $\theta$ 表示复数 $z$ 的辐角.
 
 因此我们得到：
 
-$$\boxed{|z-1|=2\sin\frac{\theta}{2}}$$
+$$\boxed{|z-1|=2\sin\dfrac{\theta}{2}}$$
 
 ---
 
@@ -73,7 +73,7 @@ $$\boxed{\sum_{k=0}^{n-1}x^k=\prod_{k=1}^{n-1}(x-\varepsilon^k)}$$
 ## 证明
 
 > 对 $\forall n\in N^*$，试证：
-> $$\boxed{\prod_{x=1}^{n-1}\sin\frac{x\pi}{n}=\frac{n}{2^{n-1}}}$$
+> $$\boxed{\prod_{x=1}^{n-1}\sin\dfrac{x\pi}{n}=\dfrac{n}{2^{n-1}}}$$
 
 下面我们开始证明这个命题.
 
@@ -87,10 +87,10 @@ $$|1-\varepsilon^1|\cdots|1-\varepsilon^{n-2}|\cdot|1-\varepsilon^{n-1}|=n\tag{3
 
 根据引理一和单位复数根模型的性质，可以推出：
 
-$$\prod_{k=1}^{n-1}2\sin\frac{k\pi}{n}=n$$
+$$\prod_{k=1}^{n-1}2\sin\dfrac{k\pi}{n}=n$$
 
 稍作整理：
 
-$$\boxed{\prod_{x=1}^{n-1}\sin\frac{x\pi}{n}=\frac{n}{2^{n-1}}}$$
+$$\boxed{\prod_{x=1}^{n-1}\sin\dfrac{x\pi}{n}=\dfrac{n}{2^{n-1}}}$$
 
 证毕.

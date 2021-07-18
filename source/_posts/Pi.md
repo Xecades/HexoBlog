@@ -37,15 +37,15 @@ $$\pi=\lim_{n\rightarrow\infty}3\times2^n\cdot\underbrace{\sqrt{2-\sqrt{2+\cdots
 $$\begin{align*}
 \pi&=3\cdot\overset{\frown}{AB}\\
  &\approx3\cdot AB\\
- &=3\cdot(2\cdot AO\cdot\sin\frac{\alpha}{2})\\
- &=3\times2\cdot\sin\frac{\alpha}{2}
+ &=3\cdot(2\cdot AO\cdot\sin\dfrac{\alpha}{2})\\
+ &=3\times2\cdot\sin\dfrac{\alpha}{2}
 \end{align*}$$
 
 ---
 
 对于 $\overset{\frown}{AB}$，我们作 $\angle AOB$ 的角平分线 $OC$，与 $\odot O$ 交于 $C$ 点.
 
-此时，有 $\alpha_1=\frac{\alpha}{2}=30^\circ$.
+此时，有 $\alpha_1=\dfrac{\alpha}{2}=30^\circ$.
 
 ![](/assets/pi-pic3.svg)
 
@@ -57,8 +57,8 @@ $$\begin{align*}
 \pi&=3\cdot\overset{\frown}{AB}\\
  &\approx3\cdot(AC+CB)\\
  &=3\times2\cdot AC\\
- &=3\times2\cdot(2\cdot AO\cdot\sin\frac{\alpha_1}{2})\\
- &=3\times2^2\cdot\sin\frac{\alpha}{2^2}
+ &=3\times2\cdot(2\cdot AO\cdot\sin\dfrac{\alpha_1}{2})\\
+ &=3\times2^2\cdot\sin\dfrac{\alpha}{2^2}
 \end{align*}$$
 
 ---
@@ -67,19 +67,19 @@ $$\begin{align*}
 
 ![](/assets/pi-pic4.svg)
 
-得到 $\alpha_2=\frac{\alpha}{2^2}=15^\circ$.
+得到 $\alpha_2=\dfrac{\alpha}{2^2}=15^\circ$.
 
 则：
 
-$$\pi\approx3\times2^3\cdot\sin\frac{\alpha}{2^3}$$
+$$\pi\approx3\times2^3\cdot\sin\dfrac{\alpha}{2^3}$$
 
 ---
 
 按照这样的方法，一直进行分割，估算的 $C$ 值也越来越接近 $2\pi$，故有：
 
-$$\pi=\lim_{n\rightarrow\infty}3\times2^n\cdot\sin\frac{\alpha}{2^n}$$
+$$\pi=\lim_{n\rightarrow\infty}3\times2^n\cdot\sin\dfrac{\alpha}{2^n}$$
 
-但是，用 $\sin$ 来表示 $\pi$ 显然是不妥的，我们需要找到普通方法吧 $\sin\frac{\alpha}{2^n}$ 展开（当然不是泰勒展开）.
+但是，用 $\sin$ 来表示 $\pi$ 显然是不妥的，我们需要找到普通方法吧 $\sin\dfrac{\alpha}{2^n}$ 展开（当然不是泰勒展开）.
 
 ---
 
@@ -89,15 +89,15 @@ $$\cos2\theta=2\cos^2\theta-1$$
 
 变一下形：
 
-$$2\cos\frac{\theta}{2}=\sqrt{2+2\cos\theta}$$
+$$2\cos\dfrac{\theta}{2}=\sqrt{2+2\cos\theta}$$
 
 考虑数列：
 
 $$\begin{align*}
 a_0&=2\cos\alpha=\sqrt{3}\\
-a_1&=2\cos\frac{\alpha}{2}\\
+a_1&=2\cos\dfrac{\alpha}{2}\\
 &\vdots\\
-a_n&=2\cos\frac{\alpha}{2^n}
+a_n&=2\cos\dfrac{\alpha}{2^n}
 \end{align*}$$
 
 显然，$a_n$ 满足如下递推关系：
@@ -111,13 +111,13 @@ $$\left\{\begin{align*}
 
 则：
 
-$$2\sin\frac{\alpha}{2^n}=2\cdot\sqrt{1-\cos^2\frac{\alpha}{2^n}}=2\cdot\sqrt{1-\frac{a_n^2}{4}}=\sqrt{4-a_n^2}=\sqrt{2-a_{n-1}}$$
+$$2\sin\dfrac{\alpha}{2^n}=2\cdot\sqrt{1-\cos^2\dfrac{\alpha}{2^n}}=2\cdot\sqrt{1-\dfrac{a_n^2}{4}}=\sqrt{4-a_n^2}=\sqrt{2-a_{n-1}}$$
 
 那么：
 
 $$\begin{align*}
-\pi&=\lim_{n\rightarrow\infty}3\times2^n\cdot\sin\frac{\alpha}{2^n}\\
-&=\lim_{n\rightarrow\infty}3\times2^{n-1}\cdot2\sin\frac{\alpha}{2^n}\\
+\pi&=\lim_{n\rightarrow\infty}3\times2^n\cdot\sin\dfrac{\alpha}{2^n}\\
+&=\lim_{n\rightarrow\infty}3\times2^{n-1}\cdot2\sin\dfrac{\alpha}{2^n}\\
 &=\lim_{n\rightarrow\infty}3\times2^{n-1}\cdot\sqrt{2-a_{n-1}}\\
 &=\lim_{n\rightarrow\infty}3\times2^n\cdot\sqrt{2-a_n}
 \end{align*}$$

@@ -49,7 +49,7 @@ $$\left\{\begin{align*}
 
 $$x^2-x-1=0$$
 
-通过求根公式可以知道 $x,y=\frac{1\pm\sqrt{5}}{2}$
+通过求根公式可以知道 $x,y=\dfrac{1\pm\sqrt{5}}{2}$
 
 因为 $x$，$y$ 的位置是对称的，我们可以列出以下式子
 
@@ -60,13 +60,13 @@ $$\left\{\begin{align*}
 
 $②-①$ 得：$(x-y)\cdot a_{n-1}=x^{n-1}-y^{n-1}$
 
-$\Rightarrow a_{n-1}=\frac{x^{n-1}-y^{n-1}}{x-y}$
+$\Rightarrow a_{n-1}=\dfrac{x^{n-1}-y^{n-1}}{x-y}$
 
-$\Rightarrow a_n=\frac{x^n-y^n}{x-y}$
+$\Rightarrow a_n=\dfrac{x^n-y^n}{x-y}$
 
-由于 $x$，$y$ 的对称性，我们可以直接代入 $x,y=\frac{1\pm\sqrt{5}}{2}$：
+由于 $x$，$y$ 的对称性，我们可以直接代入 $x,y=\dfrac{1\pm\sqrt{5}}{2}$：
 
-$$a_n=\frac{(\frac{1+\sqrt{5}}{2})^n-(\frac{1-\sqrt{5}}{2})^n}{\sqrt{5}}$$
+$$a_n=\dfrac{(\dfrac{1+\sqrt{5}}{2})^n-(\dfrac{1-\sqrt{5}}{2})^n}{\sqrt{5}}$$
 
 这样我们就得到了 $a_n$ 的通项. 最神奇的一点是，尽管式中包含无理数，$n$ 为整数时结果却仍是整数.
 
@@ -78,37 +78,37 @@ $$a_n=\frac{(\frac{1+\sqrt{5}}{2})^n-(\frac{1-\sqrt{5}}{2})^n}{\sqrt{5}}$$
 
 也就是说：
 
-$$\lim_{n\rightarrow+\infty}\frac{a_{n+1}}{a_n}=\frac{\sqrt{5}+1}{2}$$
+$$\lim_{n\rightarrow+\infty}\dfrac{a_{n+1}}{a_n}=\dfrac{\sqrt{5}+1}{2}$$
 
 下面的内容就十分简单了，读者可以试着自己证一下.
 
 为了方便表述，我们还是用 $x$，$y$ 来表示斐波那契通项：
 
-$$a_n=\frac{x^n-y^n}{x-y}$$
+$$a_n=\dfrac{x^n-y^n}{x-y}$$
 
 这里 $x$，$y$ 分别为：
 
 $$\left\{\begin{align*}
-& x=\frac{1+\sqrt{5}}{2} \\\\
-& y=\frac{1-\sqrt{5}}{2}
+& x=\dfrac{1+\sqrt{5}}{2} \\\\
+& y=\dfrac{1-\sqrt{5}}{2}
 \end{align*}\right.$$
 
 则：
 
 $$\begin{align*}
-\frac{a_{n+1}}{a_n} &= \frac{\frac{x^{n+1}-y^{n+1}}{x-y}}{\frac{x^n-y^n}{x-y}} \\\\
-&= \frac{x^{n+1}-y^{n+1}}{x^n-y^n} \\\\
-&= \frac{x\cdot x^n-x\cdot y^n-(y-x)\cdot y^n}{x^n-y^n} \\\\
-&= x+(x-y)\cdot\frac{y^n}{x^n-y^n} \\\\
-&= x+(x-y)\cdot\frac{1}{(\frac{x}{y})^n-1}
+\dfrac{a_{n+1}}{a_n} &= \dfrac{\dfrac{x^{n+1}-y^{n+1}}{x-y}}{\dfrac{x^n-y^n}{x-y}} \\\\
+&= \dfrac{x^{n+1}-y^{n+1}}{x^n-y^n} \\\\
+&= \dfrac{x\cdot x^n-x\cdot y^n-(y-x)\cdot y^n}{x^n-y^n} \\\\
+&= x+(x-y)\cdot\dfrac{y^n}{x^n-y^n} \\\\
+&= x+(x-y)\cdot\dfrac{1}{(\dfrac{x}{y})^n-1}
 \end{align*}$$
 
-易得 $\frac{x}{y}>1$
+易得 $\dfrac{x}{y}>1$
 
-故当 $n\rightarrow+\infty$ 时，$(\frac{x}{y})^n-1\rightarrow+\infty$
+故当 $n\rightarrow+\infty$ 时，$(\dfrac{x}{y})^n-1\rightarrow+\infty$
 
 所以有：
 
-$$\lim_{n\rightarrow+\infty}\frac{a_{n+1}}{a_n}=\lim_{n\rightarrow+\infty}[x+(x-y)\cdot\frac{1}{(\frac{x}{y})^n-1}]=x=\frac{1+\sqrt{5}}{2}$$
+$$\lim_{n\rightarrow+\infty}\dfrac{a_{n+1}}{a_n}=\lim_{n\rightarrow+\infty}[x+(x-y)\cdot\dfrac{1}{(\dfrac{x}{y})^n-1}]=x=\dfrac{1+\sqrt{5}}{2}$$
 
 证毕.

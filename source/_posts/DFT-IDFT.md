@@ -108,7 +108,7 @@ $$\boxed{(a_0\cdot b_0,a_1\cdot b_1,\dots,a_{n-1}\cdot b_{n-1})}$$
 
 互联网上有很多相关的资料，这里只提一下后面要用的引理.
 
-1. $\omega_n^k=\cos(2\pi\cdot\frac{k}{n})+i\sin(2\pi\cdot\frac{k}{n})$；
+1. $\omega_n^k=\cos(2\pi\cdot\dfrac{k}{n})+i\sin(2\pi\cdot\dfrac{k}{n})$；
 2. $\omega_n^k=\omega_n^{k\mod n}$；
 3. （折半引理）$\omega^{2k}_{2n}=\omega^k_n$；
 4. （消去引理）$\omega^{k+n/2}_n=-\omega^k_n$.
@@ -162,14 +162,14 @@ $$A(\omega_n^k)=A_1(\omega_n^{2k})+\omega^k_n\cdot A_2(\omega_n^{2k})$$
 **注意**，请牢记 $n$ 是 $2$ 的整数次幂，即 $n=2^x$.
 {% endnote %}
 
-对于 $k\in[0,\frac{n}{2}-1]$ 的部分（$\frac{n}{2}$ 是整数）：
+对于 $k\in[0,\dfrac{n}{2}-1]$ 的部分（$\dfrac{n}{2}$ 是整数）：
 
 $$\begin{align*}
 A(\omega_n^k)&=A_1(\omega_n^{2k})+\omega^k_n\cdot A_2(\omega_n^{2k})\\
 &=\boxed{A_1(\omega_{n/2}^k)+\omega^k_n\cdot A_2(\omega_{n/2}^k)}
 \end{align*}$$
 
-对于 $k+\frac{n}{2}\in[\frac{n}{2},n-1]$ 的部分：
+对于 $k+\dfrac{n}{2}\in[\dfrac{n}{2},n-1]$ 的部分：
 
 $$A(\omega_n^{k+n/2})=A_1(\omega_n^{2k+n})+\omega^{k+n/2}_n\cdot A_2(\omega_n^{2k+n})$$
 
@@ -185,7 +185,7 @@ $$\omega^{k+n/2}_{n}=-\omega^k_n$$
 
 $$\boxed{A(\omega_n^{k+n/2})=A_1(\omega^k_{n/2})-\omega^k_n\cdot A_2(\omega^k_{n/2})}$$
 
-$k$ 与 $k+\frac{n}{2}$ 取遍了 $0\sim n-1$ 这 $n$ 个整数，因此能通过这 $n$ 个点值反解系数.
+$k$ 与 $k+\dfrac{n}{2}$ 取遍了 $0\sim n-1$ 这 $n$ 个整数，因此能通过这 $n$ 个点值反解系数.
 
 ---
 
@@ -261,10 +261,10 @@ $j-k=0$，即 $j=k$ 时，$S(\delta)=n$.
 根据等比数列求和公式：
 
 $$\begin{align*}
-S(\delta)&=\frac{\omega_{n}^{0}[(\omega_{n}^{\delta})^{n}-1]}{\omega_{n}^{\delta}-1}\\
-&=\frac{1\cdot[(\omega_{n}^{n})^{\delta}-1]}{\omega_{n}^{\delta}-1}\\
-&=\frac{[1^{\delta}-1]}{\omega_{n}^{\delta}-1}\\
-&=\frac{0}{\omega_{n}^{\delta}-1}\\
+S(\delta)&=\dfrac{\omega_{n}^{0}[(\omega_{n}^{\delta})^{n}-1]}{\omega_{n}^{\delta}-1}\\
+&=\dfrac{1\cdot[(\omega_{n}^{n})^{\delta}-1]}{\omega_{n}^{\delta}-1}\\
+&=\dfrac{[1^{\delta}-1]}{\omega_{n}^{\delta}-1}\\
+&=\dfrac{0}{\omega_{n}^{\delta}-1}\\
 &=0
 \end{align*}$$
 
@@ -285,7 +285,7 @@ $$c_k=\sum_{j=0}^{n-1}a_j\cdot S(j-k)=a_k\cdot n$$
 
 得到：
 
-$$\boxed{a_k=\frac{c_k}{n}}$$
+$$\boxed{a_k=\dfrac{c_k}{n}}$$
 
 这里的 $a_k$ 就是原式的系数.
 

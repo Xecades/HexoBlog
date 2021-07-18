@@ -31,7 +31,7 @@ categories:
 
 看到这个公式，我们自然想到 $e^t$ 的导数就是其本身的性质，即：
 
-$$\frac{\mathrm{d}}{\mathrm{d}t}e^t=e^t$$
+$$\dfrac{\mathrm{d}}{\mathrm{d}t}e^t=e^t$$
 
 这个性质的证明我也不必多说了
 
@@ -59,7 +59,7 @@ $$\frac{\mathrm{d}}{\mathrm{d}t}e^t=e^t$$
 
 ![](/assets/EulerIdentity-pic3.png)
 
-因为 $\frac{\mathrm{d}}{\mathrm{d}t}e^{2t}=2e^{2t}$
+因为 $\dfrac{\mathrm{d}}{\mathrm{d}t}e^{2t}=2e^{2t}$
 
 这说明该点在 $e^{2t}$ 的位置上速度为 $2e^{2t}$，**速度永远为坐标的两倍**
 
@@ -75,7 +75,7 @@ $$\frac{\mathrm{d}}{\mathrm{d}t}e^t=e^t$$
 
 ![](/assets/EulerIdentity-pic5.png)
 
-有 $\frac{\mathrm{d}}{\mathrm{d}t}e^{-0.5t}=-0.5e^{-0.5t}$
+有 $\dfrac{\mathrm{d}}{\mathrm{d}t}e^{-0.5t}=-0.5e^{-0.5t}$
 
 说明其速度永远是坐标的 -0.5 倍，起始点为 1
 

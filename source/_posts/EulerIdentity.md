@@ -45,11 +45,11 @@ $$e^{i\pi}+1=0$$
 
 考虑单位复数：$z=\cos x+i\sin x$
 
-求导得：$\frac{\mathrm{d}z}{\mathrm{d}x}=i\cos x-\sin x=i\cdot z$
+求导得：$\dfrac{\mathrm{d}z}{\mathrm{d}x}=i\cos x-\sin x=i\cdot z$
 
-因此：$\frac{\mathrm{d}z}{z}=i\cdot\mathrm{d}x$
+因此：$\dfrac{\mathrm{d}z}{z}=i\cdot\mathrm{d}x$
 
-两边积分得：$\int\frac{\mathrm{d}z}{z}=i\int\mathrm{d}x$
+两边积分得：$\int\dfrac{\mathrm{d}z}{z}=i\int\mathrm{d}x$
 
 即：$\ln z=ix+\mathrm{C}$ （$\mathrm{C}$ 为常数）
 

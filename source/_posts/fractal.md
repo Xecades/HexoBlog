@@ -30,7 +30,7 @@ categories:
 
 $$f(x)=\sum^\infty_{n=0}a^n\cos(b^n\pi x)$$
 
-<center>其中$0&lt;a&lt;1，b$为正奇数，且$ab&gt;1+\frac{3}{2}\pi$</center>
+<center>其中$0&lt;a&lt;1，b$为正奇数，且$ab&gt;1+\dfrac{3}{2}\pi$</center>
 
 它的图像如下:
 
@@ -86,29 +86,29 @@ Plot[Sum[0.8 ^ i * Cos[11 ^ i * Pi * x], {i, 0, 1000}], {x, -100, 100}]
 
 首先，我们很容易得到边长为 a 的正三角形的面积公式：
 
-$$S=\frac{\sqrt{3}}{4}a^2$$
+$$S=\dfrac{\sqrt{3}}{4}a^2$$
 
 每经过一次迭代，边数 N 变为原来的 4 倍，N 也是新增小正三角形的个数. 
 
-新增的小正三角形边长变为原来的 $\frac{1}{3}$
+新增的小正三角形边长变为原来的 $\dfrac{1}{3}$
 
 可得，迭代 n 次科赫曲线的面积为：
 
-$$S_n=\frac{\sqrt{3}}{4}a^2[1+\sum_{i=1}^{n-1}\frac{3}{4}\cdot(\frac{4}{9})^i]$$
+$$S_n=\dfrac{\sqrt{3}}{4}a^2[1+\sum_{i=1}^{n-1}\dfrac{3}{4}\cdot(\dfrac{4}{9})^i]$$
 
 我们求其极限：
 
-$$\lim_{n\rightarrow+\infty}S_n=\frac{\sqrt{3}}{4}a^2[1+\sum_{i=1}^{n-1}\frac{3}{4}\cdot(\frac{4}{9})^i]$$
+$$\lim_{n\rightarrow+\infty}S_n=\dfrac{\sqrt{3}}{4}a^2[1+\sum_{i=1}^{n-1}\dfrac{3}{4}\cdot(\dfrac{4}{9})^i]$$
 
-$$=\frac{\sqrt{3}}{4}a^2[1+\frac{3}{4}\cdot\frac{\frac{4}{9}(1-(\frac{4}{9})^{n-1})}{1-\frac{4}{9}}]$$
+$$=\dfrac{\sqrt{3}}{4}a^2[1+\dfrac{3}{4}\cdot\dfrac{\dfrac{4}{9}(1-(\dfrac{4}{9})^{n-1})}{1-\dfrac{4}{9}}]$$
 
-$$=\frac{\sqrt{3}}{4}a^2[1+\frac{3}{4}\cdot\frac{\frac{4}{9}(1-0)}{1-\frac{4}{9}}]$$
+$$=\dfrac{\sqrt{3}}{4}a^2[1+\dfrac{3}{4}\cdot\dfrac{\dfrac{4}{9}(1-0)}{1-\dfrac{4}{9}}]$$
 
-$$=\frac{\sqrt{3}}{4}a^2\cdot\frac{8}{5}$$
+$$=\dfrac{\sqrt{3}}{4}a^2\cdot\dfrac{8}{5}$$
 
-$$=\frac{2}{5}\sqrt{3}a^2$$
+$$=\dfrac{2}{5}\sqrt{3}a^2$$
 
-即科赫曲线面积为 $\frac{2}{5}\sqrt{3}a^2$
+即科赫曲线面积为 $\dfrac{2}{5}\sqrt{3}a^2$
 
 ---
 ## 曼德勃罗集
